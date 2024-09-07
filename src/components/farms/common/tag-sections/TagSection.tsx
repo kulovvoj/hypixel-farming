@@ -10,17 +10,19 @@ import WaterLatch from './water-latch/WaterLatch.tsx'
 import BootSwap from './boot-swap/BootSwap.tsx'
 import Spawn from '../spawn/Spawn.tsx'
 import Info from '../info/Info.tsx'
+import { useLocation } from 'react-router-dom'
 
 interface IProps {
   farm: TFarm
 }
 
 export default function TagSection({ farm }: IProps) {
+  const { hash, pathname } = useLocation()
   const filteredTags = useMemo(() => {
     return farm.tags.filter((tag) => Object.keys(tagSections).includes(tag))
   }, [])
 
-  const [selected, setSelected] = useState(farm.info ? 'info' : 'spawn')
+  const [selected, setSelected] = useState(hash.replace('#', '') ?? (farm.info ? 'info' : 'spawn'))
 
   if (filteredTags.length === 0) return <></>
   const TagSection = tagSections[selected]?.component
@@ -31,7 +33,12 @@ export default function TagSection({ farm }: IProps) {
         defaultActiveKey={selected}
         id='tag-section-tabs'
         className='mb-3'
-        onSelect={(selected) => selected && setSelected(selected)}
+        onSelect={(selected) => {
+          if (selected) {
+            window.history.pushState(undefined, '', `/hypixel-farming${pathname}#${selected}`)
+            setSelected(selected)
+          }
+        }}
       >
         {!!farm.info && <Tab title='Info' eventKey='info' />}
         <Tab title='Spawn' eventKey='spawn' />
