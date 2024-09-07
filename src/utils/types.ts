@@ -62,7 +62,7 @@ export enum Tags {
 export const TagColors = {
   boot_swap: 'magenta',
   lava_latch: 'brick',
-  water_latch: 'magenta',
+  water_latch: 'blue',
   bps: 'blue',
   key_swap: 'yellow',
   no_key_swap: 'green',
