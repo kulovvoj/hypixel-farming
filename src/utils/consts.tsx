@@ -588,7 +588,7 @@ export const CROPS: TCrops = {
         depth: 3,
         buildDifficulty: 2,
         schema: '/hypixel-farming/assets/schemas/Cascade_Melon.litematic',
-        authors: ['Daladirn']
+        authors: ['Daladirn (feat. Krabby Patty for moral support)']
       }
     ]
   },
@@ -641,7 +641,7 @@ export const CROPS: TCrops = {
         depth: 3,
         buildDifficulty: 2,
         schema: '/hypixel-farming/assets/schemas/Cascade_Pumpkin.litematic',
-        authors: ['Daladirn']
+        authors: ['Daladirn (feat. Krabby Patty for moral support)']
       }
     ]
   },
