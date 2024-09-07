@@ -29,9 +29,10 @@ export default function Patcher({ farm }: IProps) {
         </p>
         <p>
           You can get Polyfrost's improved fork of the mod, PolyPatcher,{' '}
-          <a href='https://github.com/Polyfrost/PolyPatcher/releasesYou' target='_blank'>
+          <a href='https://github.com/Polyfrost/PolyPatcher/releases' target='_blank'>
             here
           </a>
+          .
         </p>
         <p>
           The original mod by Sk1er can be downloaded from{' '}

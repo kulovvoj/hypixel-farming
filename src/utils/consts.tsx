@@ -16,6 +16,7 @@ import cascade_spawn from '../assets/farms/common/cascade/cascade_spawn.png'
 import cascade_drowning from '../assets/farms/common/cascade/cascade_drowning.png'
 import cascade_water_latch from '../assets/farms/common/cascade/cascade_water_latch.png'
 import cascade_melon from '../assets/farms/melon/cascade/cascade_melon.png'
+import cascade_pumpkin from '../assets/farms/pumkin/cascade/cascade_pumpkin.png'
 
 export const CROP_PATH = `/crops/:type`
 export const FARM_PATH = `${CROP_PATH}/farm/:id`
@@ -544,7 +545,7 @@ export const CROPS: TCrops = {
         pitch: '-22.7',
         yaw: '-55.9',
         speed: 400,
-        enchantments: ['Frost Walker II', 'Depth Strider III'],
+        enchantments: ['Frost Walker II', 'Depth Strider III', 'Aqua Affinity I'],
         keys: [Keys.W, Keys.LC],
         depth: 3,
         buildDifficulty: 2,
@@ -557,7 +558,54 @@ export const CROPS: TCrops = {
     id: 'pumpkin',
     icon: ICONS.Pumpkin,
     label: 'Pumpkin',
-    farms: []
+    farms: [
+      {
+        id: 'cascade-pumpkin',
+        name: 'The Cascade - Pumpkin Edition',
+        banner: cascade_pumpkin,
+        pictures: {
+          [Tags.drowning]: cascade_drowning,
+          [Tags.water_latch]: cascade_water_latch
+        },
+        spawn: (
+          <>
+            <Alert variant='info' className='mt-2'>
+              Highlighted blocks are temporary and should be removed after setting spawn.
+            </Alert>
+            <img
+              alt=''
+              src={cascade_spawn}
+              style={{
+                height: '100%',
+                width: '100%',
+                borderRadius: '1rem',
+                objectFit: 'cover'
+              }}
+            />
+          </>
+        ),
+        tags: [
+          Tags.bps,
+          Tags.key_count,
+          Tags.boot_swap,
+          Tags.no_key_swap,
+          Tags.drowning,
+          Tags.water_latch,
+          Tags.max_speed
+        ],
+        bps: 19.5,
+        keyCount: 2,
+        pitch: '-22.7',
+        yaw: '-55.9',
+        speed: 400,
+        enchantments: ['Frost Walker II', 'Depth Strider III', 'Aqua Affinity I'],
+        keys: [Keys.W, Keys.LC],
+        depth: 3,
+        buildDifficulty: 2,
+        schema: '/hypixel-farming/assets/schemas/Cascade_Pumpkin.litematic',
+        authors: ['Daladirn']
+      }
+    ]
   },
   cactus: {
     id: 'cactus',
