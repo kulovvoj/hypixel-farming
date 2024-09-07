@@ -21,6 +21,10 @@ import stairway_spawn from '../assets/farms/common/stairway/stairway_spawn.png'
 import stairway_drowning from '../assets/farms/common/stairway/stairway_drowning.png'
 import stairway_water_latch from '../assets/farms/common/stairway/stairway_water_latch.png'
 import stairway_netherwart from '../assets/farms/nether_wart/stairway/stairway_wart.png'
+import dunce_wheat from '../assets/farms/wheat/dunce/dunce_wheat.png'
+import dunce_drowning from '../assets/farms/common/dunce/dunce_drowning.png'
+import dunce_spawn from '../assets/farms/common/dunce/dunce_spawn.png'
+import dunce_water_latch from '../assets/farms/common/dunce/dunce_water_latch.png'
 
 export const CROP_PATH = `/crops/:type`
 export const FARM_PATH = `${CROP_PATH}/farm/:id`
@@ -66,6 +70,73 @@ export const CROPS: TCrops = {
       //   authors: ['Daladirn', 'Harpan']
       // }
       {
+        id: 'dunce-wheat',
+        name: 'The Dunce - Wheat Edition',
+        banner: dunce_wheat,
+        pictures: {
+          [Tags.drowning]: dunce_drowning,
+          [Tags.water_latch]: dunce_water_latch
+        },
+        info: (
+          <>
+            <div>
+              <h2>Info</h2>
+              <p>
+                Simple to build, yet very efficient farm. Only downside is that there's a little setup before you start
+                farming because of boot swap.
+              </p>
+            </div>
+            <div>
+              <h2>Floating Crystal</h2>
+              <p>
+                Place a{' '}
+                <a href='https://wiki.hypixel.net/Floating_Crystal#Wheat_' target='_blank'>
+                  Wheat Crystal
+                </a>{' '}
+                on top of the hay bale block. It will replenish the latch area with fully grown Wheat before you respawn
+                for increased rates.
+              </p>
+            </div>
+          </>
+        ),
+        spawn: (
+          <>
+            <Alert variant='info' className='mt-2'>
+              Highlighted blocks are temporary and should be removed after setting spawn.
+            </Alert>
+            <img
+              src={dunce_spawn}
+              style={{
+                height: '100%',
+                width: '100%',
+                borderRadius: '1rem',
+                objectFit: 'cover'
+              }}
+            />
+          </>
+        ),
+        tags: [
+          Tags.bps,
+          Tags.key_count,
+          Tags.boot_swap,
+          Tags.no_key_swap,
+          Tags.drowning,
+          Tags.water_latch,
+          Tags.patcher
+        ],
+        bps: 19.84,
+        keyCount: 2,
+        pitch: '-13.4',
+        yaw: '6.2',
+        speed: 400,
+        enchantments: ['Frost Walker II', 'Depth Strider III'],
+        keys: [Keys.W, Keys.LC],
+        depth: 5,
+        buildDifficulty: 1,
+        schema: '/hypixel-farming/assets/schemas/Dunce_Wheat.litematic',
+        authors: ['Daladirn']
+      },
+      {
         id: 'chimney-wheat',
         name: 'The Chimney - Wheat Edition',
         banner: chimney_wheat,
@@ -74,11 +145,14 @@ export const CROPS: TCrops = {
           [Tags.lava_latch]: chimney_lava_latch
         },
         info: (
-          <p>
-            <strong>This farm should be built</strong> in the <strong>west to east</strong> or{' '}
-            <strong>east to west</strong> directions, because the lava latch is directional and will not work properly
-            when faced north or south.
-          </p>
+          <div>
+            <h2>Info</h2>
+            <p>
+              <strong>This farm should be built</strong> in the <strong>west to east</strong> or{' '}
+              <strong>east to west</strong> directions, because the lava latch is directional and will not work properly
+              when faced north or south.
+            </p>
+          </div>
         ),
         spawn: (
           <>
@@ -169,11 +243,14 @@ export const CROPS: TCrops = {
           [Tags.lava_latch]: chimney_lava_latch
         },
         info: (
-          <p>
-            <strong>This farm should be built</strong> in the <strong>west to east</strong> or{' '}
-            <strong>east to west</strong> directions, because the lava latch is directional and will not work properly
-            when faced north or south.
-          </p>
+          <div>
+            <h2>Info</h2>
+            <p>
+              <strong>This farm should be built</strong> in the <strong>west to east</strong> or{' '}
+              <strong>east to west</strong> directions, because the lava latch is directional and will not work properly
+              when faced north or south.
+            </p>
+          </div>
         ),
         spawn: (
           <>
@@ -264,11 +341,14 @@ export const CROPS: TCrops = {
           [Tags.lava_latch]: chimney_lava_latch
         },
         info: (
-          <p>
-            <strong>This farm should be built</strong> in the <strong>west to east</strong> or{' '}
-            <strong>east to west</strong> directions, because the lava latch is directional and will not work properly
-            when faced north or south.
-          </p>
+          <div>
+            <h2>Info</h2>
+            <p>
+              <strong>This farm should be built</strong> in the <strong>west to east</strong> or{' '}
+              <strong>east to west</strong> directions, because the lava latch is directional and will not work properly
+              when faced north or south.
+            </p>
+          </div>
         ),
         spawn: (
           <>
@@ -359,11 +439,14 @@ export const CROPS: TCrops = {
           [Tags.lava_latch]: chimney_lava_latch
         },
         info: (
-          <p>
-            <strong>This farm should be built</strong> in the <strong>west to east</strong> or{' '}
-            <strong>east to west</strong> directions, because the lava latch is directional and will not work properly
-            when faced north or south.
-          </p>
+          <div>
+            <h2>Info</h2>
+            <p>
+              <strong>This farm should be built</strong> in the <strong>west to east</strong> or{' '}
+              <strong>east to west</strong> directions, because the lava latch is directional and will not work properly
+              when faced north or south.
+            </p>
+          </div>
         ),
         spawn: (
           <>
@@ -512,11 +595,14 @@ export const CROPS: TCrops = {
           [Tags.lava_latch]: chimney_lava_latch
         },
         info: (
-          <p>
-            <strong>This farm should be built</strong> in the <strong>west to east</strong> or{' '}
-            <strong>east to west</strong> directions, because the lava latch is directional and will not work properly
-            when faced north or south.
-          </p>
+          <div>
+            <h2>Info</h2>
+            <p>
+              <strong>This farm should be built</strong> in the <strong>west to east</strong> or{' '}
+              <strong>east to west</strong> directions, because the lava latch is directional and will not work properly
+              when faced north or south.
+            </p>
+          </div>
         ),
         spawn: (
           <>
@@ -610,7 +696,8 @@ export const CROPS: TCrops = {
         info: (
           <>
             <div>
-              <h5>Steps to build this farm efficiently: </h5>
+              <h2>Building tips</h2>
+              <p>Steps to build this farm efficiently: </p>
               <ol>
                 <li>Build 1 plot of the non-drowning section</li>
                 <li>Paste it in all the other plots</li>
@@ -677,7 +764,8 @@ export const CROPS: TCrops = {
         info: (
           <>
             <div>
-              <h5>Steps to build this farm efficiently: </h5>
+              <h2>Building tips</h2>
+              <p>Steps to build this farm efficiently:</p>
               <ol>
                 <li>Build 1 plot of the non-drowning section</li>
                 <li>Paste it in all the other plots</li>
