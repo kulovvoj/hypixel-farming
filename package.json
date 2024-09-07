@@ -2,7 +2,7 @@
   "name": "hypixel-farming",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://kulovvoj.github.io/hypixel-farming",
+  "homepage": "/hypixel-farming",
   "type": "module",
   "scripts": {
     "start": "vite",
@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "i18next-resources-for-ts": "i18next-resources-for-ts toc -i ./src/localization/en -o ./src/@types/resources.ts",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
