@@ -22,9 +22,8 @@ const farms = {
         label: '',
         description: '',
         building_guide: {
-          description:
-            '',
-          setup: "",
+          description: '',
+          setup: '',
           potion_effects: {
             disable: '',
             absorption: '',
@@ -40,8 +39,8 @@ const farms = {
           section_length_2: '{{length}}'
         },
         warning: {
-          heading: "",
-          description: "",
+          heading: '',
+          description: ''
         }
       },
       burning: {

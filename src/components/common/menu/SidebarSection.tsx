@@ -13,8 +13,10 @@ export default function SidebarSection({ icon, label, path }: IProps) {
   const isActive = location.pathname.includes(path)
 
   return (
-    <div className={`sidebar-section${isActive ? ' active' : ''}`} >
-      <button className={`icon-container${isActive ? ' active' : ''}`} onClick={() => navigate(path)}>{icon}</button>
+    <div className={`sidebar-section${isActive ? ' active' : ''}`}>
+      <button className={`icon-container${isActive ? ' active' : ''}`} onClick={() => navigate(path)}>
+        {icon}
+      </button>
       <div className='label'>{label}</div>
     </div>
   )

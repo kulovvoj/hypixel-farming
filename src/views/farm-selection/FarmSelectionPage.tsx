@@ -1,7 +1,7 @@
 import { Navigate, useNavigate, useParams } from 'react-router-dom'
 import { CROPS, FARM_PATH } from '../../utils/consts'
 import { Badge, Card, CardBody, ProgressBar } from 'react-bootstrap'
-import {TagColors, Tags} from '../../utils/types'
+import { TagColors, Tags } from '../../utils/types'
 import whereIsEveryone from '../../assets/where_is_everyone.gif'
 
 export default function FarmSelectionPage() {
@@ -24,7 +24,9 @@ export default function FarmSelectionPage() {
             <div className='d-flex flex-row gap-2 flex-wrap'>
               {farm.tags.map((tag) => (
                 <Badge key={tag} bg={TagColors[tag]}>
-                  {tags[tag].replace('{{bps}}', farm.bps.toFixed(2)).replace('{{key_count}}', farm.keyCount?.toString() ?? '?')}
+                  {tags[tag]
+                    .replace('{{bps}}', farm.bps.toFixed(2))
+                    .replace('{{key_count}}', farm.keyCount?.toString() ?? '?')}
                 </Badge>
               ))}
             </div>

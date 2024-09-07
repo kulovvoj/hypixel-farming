@@ -1,18 +1,20 @@
 @import 'bootstrap/scss/bootstrap.scss';
 
-[data-bs-theme="light"] {
+[data-bs-theme='light'] {
   --menu-active-backdrop: rgba(0, 0, 0, 0.5);
   --menu-hover-backdrop: rgba(0, 0, 0, 0.3);
   --menu-hover-active-backdrop: rgba(0, 0, 0, 0.7);
 }
 
-[data-bs-theme="dark"] {
+[data-bs-theme='dark'] {
   --menu-active-backdrop: rgba(255, 255, 255, 0.5);
   --menu-hover-backdrop: rgba(255, 255, 255, 0.3);
   --menu-hover-active-backdrop: rgba(255, 255, 255, 0.7);
 }
 
-:root, html, body {
+:root,
+html,
+body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -53,7 +55,7 @@ a {
     bottom: 0.5rem;
     right: 0.5rem;
     padding-inline: 0.5rem;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     font-weight: 500;
     border-radius: 1rem;
   }
@@ -100,39 +102,24 @@ a {
       border-radius: 2rem;
 
       &.active {
-        filter:
-                drop-shadow(2px 0 0 var(--bs-body-bg))
-                drop-shadow(-2px 0 0 var(--bs-body-bg))
-                drop-shadow(0 2px 0 var(--bs-body-bg))
-                drop-shadow(0 -2px 0 var(--bs-body-bg))
-                drop-shadow(0 0 3px var(--menu-active-backdrop))
-                drop-shadow(0 0 3px var(--menu-active-backdrop))
-                drop-shadow(0 0 3px var(--menu-active-backdrop))
-                drop-shadow(0 0 3px var(--menu-active-backdrop));
+        filter: drop-shadow(2px 0 0 var(--bs-body-bg)) drop-shadow(-2px 0 0 var(--bs-body-bg))
+          drop-shadow(0 2px 0 var(--bs-body-bg)) drop-shadow(0 -2px 0 var(--bs-body-bg))
+          drop-shadow(0 0 3px var(--menu-active-backdrop)) drop-shadow(0 0 3px var(--menu-active-backdrop))
+          drop-shadow(0 0 3px var(--menu-active-backdrop)) drop-shadow(0 0 3px var(--menu-active-backdrop));
       }
 
       &:hover:not(.active) {
-        filter:
-                drop-shadow(2px 0 0 var(--bs-body-bg))
-                drop-shadow(-2px 0 0 var(--bs-body-bg))
-                drop-shadow(0 2px 0 var(--bs-body-bg))
-                drop-shadow(0 -2px 0 var(--bs-body-bg))
-                drop-shadow(0 0 3px var(--menu-hover-backdrop))
-                drop-shadow(0 0 3px var(--menu-hover-backdrop))
-                drop-shadow(0 0 3px var(--menu-hover-backdrop))
-                drop-shadow(0 0 3px var(--menu-hover-backdrop));
+        filter: drop-shadow(2px 0 0 var(--bs-body-bg)) drop-shadow(-2px 0 0 var(--bs-body-bg))
+          drop-shadow(0 2px 0 var(--bs-body-bg)) drop-shadow(0 -2px 0 var(--bs-body-bg))
+          drop-shadow(0 0 3px var(--menu-hover-backdrop)) drop-shadow(0 0 3px var(--menu-hover-backdrop))
+          drop-shadow(0 0 3px var(--menu-hover-backdrop)) drop-shadow(0 0 3px var(--menu-hover-backdrop));
       }
 
       &:hover.active {
-        filter:
-                drop-shadow(2px 0 0 var(--bs-body-bg))
-                drop-shadow(-2px 0 0 var(--bs-body-bg))
-                drop-shadow(0 2px 0 var(--bs-body-bg))
-                drop-shadow(0 -2px 0 var(--bs-body-bg))
-                drop-shadow(0 0 3px var(--menu-hover-active-backdrop))
-                drop-shadow(0 0 3px var(--menu-hover-active-backdrop))
-                drop-shadow(0 0 3px var(--menu-hover-active-backdrop))
-                drop-shadow(0 0 3px var(--menu-hover-active-backdrop));
+        filter: drop-shadow(2px 0 0 var(--bs-body-bg)) drop-shadow(-2px 0 0 var(--bs-body-bg))
+          drop-shadow(0 2px 0 var(--bs-body-bg)) drop-shadow(0 -2px 0 var(--bs-body-bg))
+          drop-shadow(0 0 3px var(--menu-hover-active-backdrop)) drop-shadow(0 0 3px var(--menu-hover-active-backdrop))
+          drop-shadow(0 0 3px var(--menu-hover-active-backdrop)) drop-shadow(0 0 3px var(--menu-hover-active-backdrop));
       }
     }
 
@@ -188,41 +175,25 @@ a {
       transition: filter 0.2s linear;
       border-radius: 1rem;
 
-
       &.active {
-        filter:
-                drop-shadow(2px 0 0 var(--bs-body-bg))
-                drop-shadow(-2px 0 0 var(--bs-body-bg))
-                drop-shadow(0 2px 0 var(--bs-body-bg))
-                drop-shadow(0 -2px 0 var(--bs-body-bg))
-                drop-shadow(0 0 2px rgba(255, 255,255, 0.5))
-                drop-shadow(0 0 2px rgba(255, 255,255, 0.5))
-                drop-shadow(0 0 2px rgba(255, 255,255, 0.5))
-                drop-shadow(0 0 2px rgba(255, 255,255, 0.5));
+        filter: drop-shadow(2px 0 0 var(--bs-body-bg)) drop-shadow(-2px 0 0 var(--bs-body-bg))
+          drop-shadow(0 2px 0 var(--bs-body-bg)) drop-shadow(0 -2px 0 var(--bs-body-bg))
+          drop-shadow(0 0 2px rgba(255, 255, 255, 0.5)) drop-shadow(0 0 2px rgba(255, 255, 255, 0.5))
+          drop-shadow(0 0 2px rgba(255, 255, 255, 0.5)) drop-shadow(0 0 2px rgba(255, 255, 255, 0.5));
       }
 
       &:hover:not(.active) {
-        filter:
-                drop-shadow(2px 0 0 var(--bs-body-bg))
-                drop-shadow(-2px 0 0 var(--bs-body-bg))
-                drop-shadow(0 2px 0 var(--bs-body-bg))
-                drop-shadow(0 -2px 0 var(--bs-body-bg))
-                drop-shadow(0 0 2px rgba(255, 255,255, 0.3))
-                drop-shadow(0 0 2px rgba(255, 255,255, 0.3))
-                drop-shadow(0 0 2px rgba(255, 255,255, 0.3))
-                drop-shadow(0 0 2px rgba(255, 255,255, 0.3));
+        filter: drop-shadow(2px 0 0 var(--bs-body-bg)) drop-shadow(-2px 0 0 var(--bs-body-bg))
+          drop-shadow(0 2px 0 var(--bs-body-bg)) drop-shadow(0 -2px 0 var(--bs-body-bg))
+          drop-shadow(0 0 2px rgba(255, 255, 255, 0.3)) drop-shadow(0 0 2px rgba(255, 255, 255, 0.3))
+          drop-shadow(0 0 2px rgba(255, 255, 255, 0.3)) drop-shadow(0 0 2px rgba(255, 255, 255, 0.3));
       }
 
       &:hover.active {
-        filter:
-                drop-shadow(2px 0 0 var(--bs-body-bg))
-                drop-shadow(-2px 0 0 var(--bs-body-bg))
-                drop-shadow(0 2px 0 var(--bs-body-bg))
-                drop-shadow(0 -2px 0 var(--bs-body-bg))
-                drop-shadow(0 0 2px rgba(255, 255,255, 0.7))
-                drop-shadow(0 0 2px rgba(255, 255,255, 0.7))
-                drop-shadow(0 0 2px rgba(255, 255,255, 0.7))
-                drop-shadow(0 0 2px rgba(255, 255,255, 0.7));
+        filter: drop-shadow(2px 0 0 var(--bs-body-bg)) drop-shadow(-2px 0 0 var(--bs-body-bg))
+          drop-shadow(0 2px 0 var(--bs-body-bg)) drop-shadow(0 -2px 0 var(--bs-body-bg))
+          drop-shadow(0 0 2px rgba(255, 255, 255, 0.7)) drop-shadow(0 0 2px rgba(255, 255, 255, 0.7))
+          drop-shadow(0 0 2px rgba(255, 255, 255, 0.7)) drop-shadow(0 0 2px rgba(255, 255, 255, 0.7));
       }
 
       & > svg {
@@ -249,31 +220,31 @@ a {
     background-color: #700178;
   }
   &.bg-red {
-    background-color: #6B012E;
+    background-color: #6b012e;
   }
   &.bg-blue {
-    background-color: #0B4A91;
+    background-color: #0b4a91;
   }
   &.bg-ocean {
-    background-color: #04718A;
+    background-color: #04718a;
   }
   &.bg-green {
-    background-color: #008B1F;
+    background-color: #008b1f;
   }
   &.bg-lime {
-    background-color: #72AB00;
+    background-color: #72ab00;
   }
   &.bg-yellow {
-    background-color: #B8A700;
+    background-color: #b8a700;
   }
   &.bg-orange {
-    background-color: #B86000;
+    background-color: #b86000;
   }
   &.bg-brick {
-    background-color: #B87A00;
+    background-color: #b87a00;
   }
   &.bg-fire {
-    background-color: #B82C00;
+    background-color: #b82c00;
   }
 }
 
@@ -286,11 +257,11 @@ a {
   }
 
   &:hover > .card-body {
-    background-color: rgba(128,128,128,0.04);
+    background-color: rgba(128, 128, 128, 0.04);
   }
 
   &:active > .card-body {
-    background-color: rgba(128,128,128,0.07);
+    background-color: rgba(128, 128, 128, 0.07);
   }
 }
 

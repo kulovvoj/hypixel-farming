@@ -17,15 +17,15 @@ export type TFarm = {
   description?: string
   info?: string
   banner: string
-  pictures?: { [key in Tags]?: string },
-  spawn: ReactNode,
+  pictures?: { [key in Tags]?: string }
+  spawn: ReactNode
   bps: number
   keyCount?: number
   depth: number
   tags: Tags[]
-  pitch: string,
-  yaw: string,
-  speed: number,
+  pitch: string
+  yaw: string
+  speed: number
   enchantments: string[]
   keys: Keys[]
   buildDifficulty: number

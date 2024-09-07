@@ -1,7 +1,7 @@
-import {Alert} from "react-bootstrap";
+import { Alert } from 'react-bootstrap'
 
-import {ICONS} from '../components/icon/Icon'
-import {Keys, Tags, TCrops} from './types'
+import { ICONS } from '../components/icon/Icon'
+import { Keys, Tags, TCrops } from './types'
 import chimney_wheat from '../assets/farms/wheat/chimney/chimney_wheat.png'
 import chimney_carrot from '../assets/farms/carrot/chimney/chimney_carrot.png'
 import chimney_potato from '../assets/farms/potato/chimney/chimney_potato.png'
@@ -61,14 +61,15 @@ export const CROPS: TCrops = {
       //   authors: ['Daladirn', 'Harpan']
       // }
       {
-          id: 'chimney-wheat',
-          name: 'The Chimney - Wheat Edition',
-          banner: chimney_wheat,
-          pictures: {
-            [Tags.drowning]: chimney_drowning,
-            [Tags.lava_latch]: chimney_lava_latch
-          },
-          spawn: <>
+        id: 'chimney-wheat',
+        name: 'The Chimney - Wheat Edition',
+        banner: chimney_wheat,
+        pictures: {
+          [Tags.drowning]: chimney_drowning,
+          [Tags.lava_latch]: chimney_lava_latch
+        },
+        spawn: (
+          <>
             <div>
               <h5>Remove highlighted redstone torch:</h5>
               <img
@@ -117,8 +118,18 @@ export const CROPS: TCrops = {
                 }}
               />
             </div>
-          </>,
-        tags: [Tags.bps, Tags.key_count, Tags.boot_swap, Tags.no_key_swap, Tags.drowning, Tags.lava_latch, Tags.max_speed, Tags.patcher],
+          </>
+        ),
+        tags: [
+          Tags.bps,
+          Tags.key_count,
+          Tags.boot_swap,
+          Tags.no_key_swap,
+          Tags.drowning,
+          Tags.lava_latch,
+          Tags.max_speed,
+          Tags.patcher
+        ],
         bps: 19.8,
         keyCount: 3,
         pitch: '0.0',
@@ -146,57 +157,68 @@ export const CROPS: TCrops = {
           [Tags.drowning]: chimney_drowning,
           [Tags.lava_latch]: chimney_lava_latch
         },
-        spawn: <>
-          <div>
-            <h5>Remove highlighted redstone torch:</h5>
-            <img
-              alt=''
-              src={chimney_spawn_01}
-              style={{
-                width: '100%',
-                borderRadius: '1rem',
-                objectFit: 'cover'
-              }}
-            />
-          </div>
-          <div>
-            <h5>Place a block and walls like shown:</h5>
-            <img
-              alt=''
-              src={chimney_spawn_02}
-              style={{
-                width: '100%',
-                borderRadius: '1rem',
-                objectFit: 'cover'
-              }}
-            />
-          </div>
-          <div>
-            <h5>Add 4 snow layers and set your spawn</h5>
-            <img
-              alt=''
-              src={chimney_spawn_03}
-              style={{
-                width: '100%',
-                borderRadius: '1rem',
-                objectFit: 'cover'
-              }}
-            />
-          </div>
-          <div>
-            <h5>Remove blocks you've placed and put back the redstone torch:</h5>
-            <img
-              alt=''
-              src={chimney_spawn_01}
-              style={{
-                width: '100%',
-                borderRadius: '1rem',
-                objectFit: 'cover'
-              }}
-            />
-          </div>
-        </>,
-        tags: [Tags.bps, Tags.key_count, Tags.boot_swap, Tags.no_key_swap, Tags.drowning, Tags.lava_latch, Tags.max_speed, Tags.patcher],
+        spawn: (
+          <>
+            <div>
+              <h5>Remove highlighted redstone torch:</h5>
+              <img
+                alt=''
+                src={chimney_spawn_01}
+                style={{
+                  width: '100%',
+                  borderRadius: '1rem',
+                  objectFit: 'cover'
+                }}
+              />
+            </div>
+            <div>
+              <h5>Place a block and walls like shown:</h5>
+              <img
+                alt=''
+                src={chimney_spawn_02}
+                style={{
+                  width: '100%',
+                  borderRadius: '1rem',
+                  objectFit: 'cover'
+                }}
+              />
+            </div>
+            <div>
+              <h5>Add 4 snow layers and set your spawn</h5>
+              <img
+                alt=''
+                src={chimney_spawn_03}
+                style={{
+                  width: '100%',
+                  borderRadius: '1rem',
+                  objectFit: 'cover'
+                }}
+              />
+            </div>
+            <div>
+              <h5>Remove blocks you've placed and put back the redstone torch:</h5>
+              <img
+                alt=''
+                src={chimney_spawn_01}
+                style={{
+                  width: '100%',
+                  borderRadius: '1rem',
+                  objectFit: 'cover'
+                }}
+              />
+            </div>
+          </>
+        ),
+        tags: [
+          Tags.bps,
+          Tags.key_count,
+          Tags.boot_swap,
+          Tags.no_key_swap,
+          Tags.drowning,
+          Tags.lava_latch,
+          Tags.max_speed,
+          Tags.patcher
+        ],
         bps: 19.8,
         keyCount: 3,
         pitch: '0.0',
@@ -224,57 +246,68 @@ export const CROPS: TCrops = {
           [Tags.drowning]: chimney_drowning,
           [Tags.lava_latch]: chimney_lava_latch
         },
-        spawn: <>
-          <div>
-            <h5>Remove highlighted redstone torch:</h5>
-            <img
-              alt=''
-              src={chimney_spawn_01}
-              style={{
-                width: '100%',
-                borderRadius: '1rem',
-                objectFit: 'cover'
-              }}
-            />
-          </div>
-          <div>
-            <h5>Place a block and walls like shown:</h5>
-            <img
-              alt=''
-              src={chimney_spawn_02}
-              style={{
-                width: '100%',
-                borderRadius: '1rem',
-                objectFit: 'cover'
-              }}
-            />
-          </div>
-          <div>
-            <h5>Add 4 snow layers and set your spawn</h5>
-            <img
-              alt=''
-              src={chimney_spawn_03}
-              style={{
-                width: '100%',
-                borderRadius: '1rem',
-                objectFit: 'cover'
-              }}
-            />
-          </div>
-          <div>
-            <h5>Remove blocks you've placed and put back the redstone torch:</h5>
-            <img
-              alt=''
-              src={chimney_spawn_01}
-              style={{
-                width: '100%',
-                borderRadius: '1rem',
-                objectFit: 'cover'
-              }}
-            />
-          </div>
-        </>,
-        tags: [Tags.bps, Tags.key_count, Tags.boot_swap, Tags.no_key_swap, Tags.drowning, Tags.lava_latch, Tags.max_speed, Tags.patcher],
+        spawn: (
+          <>
+            <div>
+              <h5>Remove highlighted redstone torch:</h5>
+              <img
+                alt=''
+                src={chimney_spawn_01}
+                style={{
+                  width: '100%',
+                  borderRadius: '1rem',
+                  objectFit: 'cover'
+                }}
+              />
+            </div>
+            <div>
+              <h5>Place a block and walls like shown:</h5>
+              <img
+                alt=''
+                src={chimney_spawn_02}
+                style={{
+                  width: '100%',
+                  borderRadius: '1rem',
+                  objectFit: 'cover'
+                }}
+              />
+            </div>
+            <div>
+              <h5>Add 4 snow layers and set your spawn</h5>
+              <img
+                alt=''
+                src={chimney_spawn_03}
+                style={{
+                  width: '100%',
+                  borderRadius: '1rem',
+                  objectFit: 'cover'
+                }}
+              />
+            </div>
+            <div>
+              <h5>Remove blocks you've placed and put back the redstone torch:</h5>
+              <img
+                alt=''
+                src={chimney_spawn_01}
+                style={{
+                  width: '100%',
+                  borderRadius: '1rem',
+                  objectFit: 'cover'
+                }}
+              />
+            </div>
+          </>
+        ),
+        tags: [
+          Tags.bps,
+          Tags.key_count,
+          Tags.boot_swap,
+          Tags.no_key_swap,
+          Tags.drowning,
+          Tags.lava_latch,
+          Tags.max_speed,
+          Tags.patcher
+        ],
         bps: 19.8,
         keyCount: 3,
         pitch: '0.0',
@@ -302,57 +335,68 @@ export const CROPS: TCrops = {
           [Tags.drowning]: chimney_drowning,
           [Tags.lava_latch]: chimney_lava_latch
         },
-        spawn: <>
-          <div>
-            <h5>Remove highlighted redstone torch:</h5>
-            <img
-              alt=''
-              src={chimney_spawn_01}
-              style={{
-                width: '100%',
-                borderRadius: '1rem',
-                objectFit: 'cover'
-              }}
-            />
-          </div>
-          <div>
-            <h5>Place a block and walls like shown:</h5>
-            <img
-              alt=''
-              src={chimney_spawn_02}
-              style={{
-                width: '100%',
-                borderRadius: '1rem',
-                objectFit: 'cover'
-              }}
-            />
-          </div>
-          <div>
-            <h5>Add 4 snow layers and set your spawn</h5>
-            <img
-              alt=''
-              src={chimney_spawn_03}
-              style={{
-                width: '100%',
-                borderRadius: '1rem',
-                objectFit: 'cover'
-              }}
-            />
-          </div>
-          <div>
-            <h5>Remove blocks you've placed and put back the redstone torch:</h5>
-            <img
-              alt=''
-              src={chimney_spawn_01}
-              style={{
-                width: '100%',
-                borderRadius: '1rem',
-                objectFit: 'cover'
-              }}
-            />
-          </div>
-        </>,
-        tags: [Tags.bps, Tags.key_count, Tags.boot_swap, Tags.no_key_swap, Tags.drowning, Tags.lava_latch, Tags.max_speed, Tags.patcher],
+        spawn: (
+          <>
+            <div>
+              <h5>Remove highlighted redstone torch:</h5>
+              <img
+                alt=''
+                src={chimney_spawn_01}
+                style={{
+                  width: '100%',
+                  borderRadius: '1rem',
+                  objectFit: 'cover'
+                }}
+              />
+            </div>
+            <div>
+              <h5>Place a block and walls like shown:</h5>
+              <img
+                alt=''
+                src={chimney_spawn_02}
+                style={{
+                  width: '100%',
+                  borderRadius: '1rem',
+                  objectFit: 'cover'
+                }}
+              />
+            </div>
+            <div>
+              <h5>Add 4 snow layers and set your spawn</h5>
+              <img
+                alt=''
+                src={chimney_spawn_03}
+                style={{
+                  width: '100%',
+                  borderRadius: '1rem',
+                  objectFit: 'cover'
+                }}
+              />
+            </div>
+            <div>
+              <h5>Remove blocks you've placed and put back the redstone torch:</h5>
+              <img
+                alt=''
+                src={chimney_spawn_01}
+                style={{
+                  width: '100%',
+                  borderRadius: '1rem',
+                  objectFit: 'cover'
+                }}
+              />
+            </div>
+          </>
+        ),
+        tags: [
+          Tags.bps,
+          Tags.key_count,
+          Tags.boot_swap,
+          Tags.no_key_swap,
+          Tags.drowning,
+          Tags.lava_latch,
+          Tags.max_speed,
+          Tags.patcher
+        ],
         bps: 19.8,
         keyCount: 3,
         pitch: '0.0',
@@ -380,57 +424,68 @@ export const CROPS: TCrops = {
           [Tags.drowning]: chimney_drowning,
           [Tags.lava_latch]: chimney_lava_latch
         },
-        spawn: <>
-          <div>
-            <h5>Remove highlighted redstone torch:</h5>
-            <img
-              alt=''
-              src={chimney_spawn_01}
-              style={{
-                width: '100%',
-                borderRadius: '1rem',
-                objectFit: 'cover'
-              }}
-            />
-          </div>
-          <div>
-            <h5>Place a block and walls like shown:</h5>
-            <img
-              alt=''
-              src={chimney_spawn_02}
-              style={{
-                width: '100%',
-                borderRadius: '1rem',
-                objectFit: 'cover'
-              }}
-            />
-          </div>
-          <div>
-            <h5>Add 4 snow layers and set your spawn</h5>
-            <img
-              alt=''
-              src={chimney_spawn_03}
-              style={{
-                width: '100%',
-                borderRadius: '1rem',
-                objectFit: 'cover'
-              }}
-            />
-          </div>
-          <div>
-            <h5>Remove blocks you've placed and put back the redstone torch:</h5>
-            <img
-              alt=''
-              src={chimney_spawn_01}
-              style={{
-                width: '100%',
-                borderRadius: '1rem',
-                objectFit: 'cover'
-              }}
-            />
-          </div>
-        </>,
-        tags: [Tags.bps, Tags.key_count, Tags.boot_swap, Tags.no_key_swap, Tags.drowning, Tags.lava_latch, Tags.max_speed, Tags.patcher],
+        spawn: (
+          <>
+            <div>
+              <h5>Remove highlighted redstone torch:</h5>
+              <img
+                alt=''
+                src={chimney_spawn_01}
+                style={{
+                  width: '100%',
+                  borderRadius: '1rem',
+                  objectFit: 'cover'
+                }}
+              />
+            </div>
+            <div>
+              <h5>Place a block and walls like shown:</h5>
+              <img
+                alt=''
+                src={chimney_spawn_02}
+                style={{
+                  width: '100%',
+                  borderRadius: '1rem',
+                  objectFit: 'cover'
+                }}
+              />
+            </div>
+            <div>
+              <h5>Add 4 snow layers and set your spawn</h5>
+              <img
+                alt=''
+                src={chimney_spawn_03}
+                style={{
+                  width: '100%',
+                  borderRadius: '1rem',
+                  objectFit: 'cover'
+                }}
+              />
+            </div>
+            <div>
+              <h5>Remove blocks you've placed and put back the redstone torch:</h5>
+              <img
+                alt=''
+                src={chimney_spawn_01}
+                style={{
+                  width: '100%',
+                  borderRadius: '1rem',
+                  objectFit: 'cover'
+                }}
+              />
+            </div>
+          </>
+        ),
+        tags: [
+          Tags.bps,
+          Tags.key_count,
+          Tags.boot_swap,
+          Tags.no_key_swap,
+          Tags.drowning,
+          Tags.lava_latch,
+          Tags.max_speed,
+          Tags.patcher
+        ],
         bps: 19.71,
         keyCount: 3,
         pitch: '25.3',
@@ -458,7 +513,8 @@ export const CROPS: TCrops = {
           [Tags.drowning]: cascade_drowning,
           [Tags.water_latch]: cascade_water_latch
         },
-          spawn: <>
+        spawn: (
+          <>
             <Alert variant='info' className='mt-2'>
               Highlighted blocks are temporary and should be removed after setting spawn.
             </Alert>
@@ -472,8 +528,17 @@ export const CROPS: TCrops = {
                 objectFit: 'cover'
               }}
             />
-          </>,
-        tags: [Tags.bps, Tags.key_count, Tags.boot_swap, Tags.no_key_swap, Tags.drowning, Tags.water_latch, Tags.max_speed],
+          </>
+        ),
+        tags: [
+          Tags.bps,
+          Tags.key_count,
+          Tags.boot_swap,
+          Tags.no_key_swap,
+          Tags.drowning,
+          Tags.water_latch,
+          Tags.max_speed
+        ],
         bps: 19.5,
         keyCount: 2,
         pitch: '-22.7',
