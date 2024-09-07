@@ -24,7 +24,7 @@ export default function FarmSelectionPage() {
             <div className='d-flex flex-row gap-2 flex-wrap'>
               {farm.tags.map((tag) => (
                 <Badge key={tag} bg={TagColors[tag]}>
-                  {tags[tag].replace('{{bps}}', farm.bps.toFixed(2)).replace('{{key_count}}', farm.keyCount?.toString())}
+                  {tags[tag].replace('{{bps}}', farm.bps.toFixed(2)).replace('{{key_count}}', farm.keyCount?.toString() ?? '?')}
                 </Badge>
               ))}
             </div>

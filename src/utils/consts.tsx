@@ -128,7 +128,7 @@ export const CROPS: TCrops = {
         keys: [Keys.W, Keys.A, Keys.LC],
         depth: 5,
         buildDifficulty: 3,
-        schema: '/assets/farms/wheat/chimney/Chimney_Wheat.litematic',
+        schema: '/assets/schemas/Chimney_Wheat.litematic',
         authors: ['Daladirn', 'Harpan']
       }
     ]
@@ -206,7 +206,7 @@ export const CROPS: TCrops = {
         keys: [Keys.W, Keys.A, Keys.LC],
         depth: 5,
         buildDifficulty: 3,
-        schema: '/assets/farms/carrot/chimney/Chimney_Carrot.litematic',
+        schema: '/assets/schemas/Chimney_Carrot.litematic',
         authors: ['Daladirn', 'Harpan']
       }
     ]
@@ -284,7 +284,7 @@ export const CROPS: TCrops = {
         keys: [Keys.W, Keys.A, Keys.LC],
         depth: 5,
         buildDifficulty: 3,
-        schema: '/assets/farms/potato/chimney/Chimney_Potato.litematic',
+        schema: '/assets/schemas/Chimney_Potato.litematic',
         authors: ['Daladirn', 'Harpan']
       }
     ]
@@ -362,7 +362,7 @@ export const CROPS: TCrops = {
         keys: [Keys.W, Keys.A, Keys.LC],
         depth: 5,
         buildDifficulty: 3,
-        schema: '/assets/farms/nether_wart/chimney/Chimney_Netherwart.litematic',
+        schema: '/assets/schemas/Chimney_Netherwart.litematic',
         authors: ['Daladirn', 'Harpan']
       }
     ]
@@ -440,7 +440,7 @@ export const CROPS: TCrops = {
         keys: [Keys.W, Keys.A, Keys.LC],
         depth: 4,
         buildDifficulty: 3,
-        schema: '/assets/farms/mushroom/chimney/Chimney_Mushroom.litematic',
+        schema: '/assets/schemas/Chimney_Mushroom.litematic',
         authors: ['Daladirn', 'Harpan']
       }
     ]
@@ -483,7 +483,7 @@ export const CROPS: TCrops = {
         keys: [Keys.W, Keys.LC],
         depth: 3,
         buildDifficulty: 2,
-        schema: '/assets/farms/melon/cascade/Cascade_Melon.litematic',
+        schema: '/assets/schemas/Cascade_Melon.litematic',
         authors: ['Daladirn']
       }
     ]

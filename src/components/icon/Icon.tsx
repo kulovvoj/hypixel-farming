@@ -23,7 +23,7 @@ import MouseLcSvg from '../../assets/icons/inputs/mouse-lc.svg'
 import MouseRcSvg from '../../assets/icons/inputs/mouse-rc.svg'
 import { FunctionComponent, SVGAttributes } from 'react'
 
-export const ICONS: { [key: string]: FunctionComponent<SVGAttributes<SVGElement>> } = {
+export const ICONS: { [key: string]: any } = {
   Wheat: WheatSvg,
   Carrot: CarrotSvg,
   Potato: PotatoSvg,

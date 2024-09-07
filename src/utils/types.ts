@@ -1,4 +1,4 @@
-import {FunctionComponent, ReactNode, SVGAttributes} from 'react'
+import { ReactNode } from 'react'
 
 export type TCrops = {
   [key: string]: TCrop
@@ -6,7 +6,7 @@ export type TCrops = {
 
 export type TCrop = {
   id: string
-  icon: FunctionComponent<SVGAttributes<SVGElement>>
+  icon: any
   label: string
   farms: TFarm[]
 }
@@ -17,9 +17,7 @@ export type TFarm = {
   description?: string
   info?: string
   banner: string
-  pictures?: {
-    [key in Tags]: string
-  },
+  pictures?: { [key in Tags]?: string },
   spawn: ReactNode,
   bps: number
   keyCount?: number
@@ -32,7 +30,7 @@ export type TFarm = {
   keys: Keys[]
   buildDifficulty: number
   schema: string
-  authors: ['Daladirn', 'Harpan']
+  authors: string[]
 }
 
 export enum Keys {

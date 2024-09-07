@@ -1,6 +1,6 @@
 import {Tags, TFarm} from "../../../../utils/types.ts";
 import Drowning from "./drowning/Drowning.tsx";
-import React, {FC, useMemo, useState} from "react";
+import React, {useMemo, useState} from "react";
 import {Tab, Tabs} from "react-bootstrap";
 import Patcher from "./patcher/Patcher.tsx";
 import Burning from "./burning/Burning.tsx";
@@ -29,20 +29,22 @@ export default function TagSection({farm}: IProps) {
       defaultActiveKey={selected}
       id="tag-section-tabs"
       className="mb-3"
-      onSelect={(selected) => setSelected(selected)}
+      onSelect={(selected) => selected && setSelected(selected)}
     >
         {!!farm.info && <Tab title='Info' eventKey='info'/>}
         <Tab title='Spawn' eventKey='spawn' />
       {
-        filteredTags.map((tag) => <Tab key={tag} title={tagSections[tag].tab} eventKey={tag} />)
+        filteredTags.map((tag) => <Tab key={tag} title={tagSections[tag]?.tab} eventKey={tag} />)
       }
     </Tabs>
     {selected === 'spawn' && <Spawn farm={farm} /> }
-    {farm.tags.includes(selected) && <TagSection farm={farm} />}
+    {!!TagSection && <TagSection farm={farm} />}
   </div>
 }
 
-const tagSections: {[key in Tags]: { component: FC<{farm: TFarm}>, tab: string }} = {
+const tagSections: {
+  [key: string]: { component: any; tab: string };
+} = {
   [Tags.drowning]: {
     tab: 'Drowning',
     component: Drowning

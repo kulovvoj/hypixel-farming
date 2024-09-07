@@ -40,6 +40,6 @@ export default function BootSwap({farm}: IProps) {
         <li>If you do end up with Depth Strider boots equipped, test whether you're freezing water. If not, repeat.</li>
       </ol>
     </div>
-    <video src={bootSwapMp4} autoPlay loop onLoadStart="this.volume=0" className='w-100' style={{borderRadius: '1rem' }} />
+    <video src={bootSwapMp4} autoPlay loop className='w-100' style={{borderRadius: '1rem' }} />
   </div>
 }
