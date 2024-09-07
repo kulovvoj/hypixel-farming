@@ -5,6 +5,7 @@ import dts from 'vite-plugin-dts'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/hypixel-farming',
   plugins: [
     svgr({
       // svgr options: https://react-svgr.com/docs/options/
