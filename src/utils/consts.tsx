@@ -107,7 +107,7 @@ export const CROPS: TCrops = {
               />
             </div>
             <div>
-              <h5>Add 4 snow layers and set your spawn</h5>
+              <h5>Add 4 snow layers and set your spawn:</h5>
               <img
                 alt=''
                 src={chimney_spawn_03}
@@ -202,7 +202,7 @@ export const CROPS: TCrops = {
               />
             </div>
             <div>
-              <h5>Add 4 snow layers and set your spawn</h5>
+              <h5>Add 4 snow layers and set your spawn:</h5>
               <img
                 alt=''
                 src={chimney_spawn_03}
@@ -297,7 +297,7 @@ export const CROPS: TCrops = {
               />
             </div>
             <div>
-              <h5>Add 4 snow layers and set your spawn</h5>
+              <h5>Add 4 snow layers and set your spawn:</h5>
               <img
                 alt=''
                 src={chimney_spawn_03}
@@ -392,7 +392,7 @@ export const CROPS: TCrops = {
               />
             </div>
             <div>
-              <h5>Add 4 snow layers and set your spawn</h5>
+              <h5>Add 4 snow layers and set your spawn:</h5>
               <img
                 alt=''
                 src={chimney_spawn_03}
@@ -533,7 +533,7 @@ export const CROPS: TCrops = {
               />
             </div>
             <div>
-              <h5>Add 4 snow layers and set your spawn</h5>
+              <h5>Add 4 snow layers and set your spawn:</h5>
               <img
                 alt=''
                 src={chimney_spawn_03}
