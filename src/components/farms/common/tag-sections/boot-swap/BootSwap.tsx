@@ -1,5 +1,6 @@
 import { TFarm } from '../../../../../utils/types.ts'
 import bootSwapMp4 from '../../../../../assets/farms/bootswap.mp4'
+import { Alert } from 'react-bootstrap'
 
 interface IProps {
   farm: TFarm
@@ -46,6 +47,10 @@ export default function BootSwap({ farm }: IProps) {
           </li>
         </ol>
       </div>
+      <Alert variant='warning'>
+        The effect will wear off once you leave your garden, change the speed limit on your Rancher's boots or equip the
+        Frost Walker boots.
+      </Alert>
       <video src={bootSwapMp4} autoPlay loop className='w-100' style={{ borderRadius: '1rem' }} />
     </div>
   )

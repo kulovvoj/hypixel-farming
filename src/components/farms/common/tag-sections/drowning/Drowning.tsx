@@ -44,22 +44,22 @@ export default function Drowning({ farm }: IProps) {
             <p>Disable or do not use these potion effects:</p>
             <ListGroup className='mb-3'>
               <ListGroupItem>
-                <a href='https://wiki.hypixel.net/Water_Breathing_Potion' target='_blank'>
+                <a href='https://wiki.hypixel.net/Absorption_Potion' target='_blank'>
                   Absorption
                 </a>
               </ListGroupItem>
               <ListGroupItem>
-                <a href='https://wiki.hypixel.net/Absorption_Potion' target='_blank'>
+                <a href='https://wiki.hypixel.net/Adrenaline_Potion' target='_blank'>
                   Adrenaline
                 </a>
               </ListGroupItem>
               <ListGroupItem>
-                <a href='https://wiki.hypixel.net/Adrenaline_Potion' target='_blank'>
+                <a href='https://wiki.hypixel.net/Regeneration_Potion' target='_blank'>
                   Regeneration
                 </a>
               </ListGroupItem>
               <ListGroupItem>
-                <a href='https://wiki.hypixel.net/Regeneration_Potion' target='_blank'>
+                <a href='https://wiki.hypixel.net/Water_Breathing_Potion' target='_blank'>
                   Water Breathing
                 </a>
               </ListGroupItem>
