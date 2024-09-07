@@ -17,7 +17,7 @@ export default function FarmSelectionPage() {
       <div className='d-flex flex-column gap-3'>
         {crop.farms.map((farm) => (
           <Card
-            key={crop.id}
+            key={farm.id}
             className='clickable'
             onClick={() => navigate(FARM_PATH.replace(':type', type).replace(':id', farm.id))}
           >

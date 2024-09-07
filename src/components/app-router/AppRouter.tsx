@@ -5,13 +5,11 @@ import FarmSelectionPage from '../../views/farm-selection/FarmSelectionPage'
 import FarmGuide from '../../views/farm-guide/FarmGuide'
 
 export default function AppRouter() {
-  const location = useLocation()
-
   return (
     <Routes>
       <Route path='/' element={<AppOverview />}>
         <Route path={CROP_PATH}>
-          <Route index element={<FarmSelectionPage key={location.pathname} />} />
+          <Route index element={<FarmSelectionPage />} />
           <Route path={FARM_PATH} element={<FarmGuide />} />
         </Route>
       </Route>
