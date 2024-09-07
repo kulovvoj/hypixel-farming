@@ -22,7 +22,7 @@ export default function TagSection({ farm }: IProps) {
     return farm.tags.filter((tag) => Object.keys(tagSections).includes(tag))
   }, [])
 
-  const [selected, setSelected] = useState(hash.replace('#', '') ?? (farm.info ? 'info' : 'spawn'))
+  const [selected, setSelected] = useState(hash.replace('#', '') ? hash.replace('#', '') : farm.info ? 'info' : 'spawn')
 
   if (filteredTags.length === 0) return <></>
   const TagSection = tagSections[selected]?.component
