@@ -449,7 +449,7 @@ export const CROPS: TCrops = {
         keys: [Keys.W, Keys.A, Keys.LC],
         depth: 5,
         buildDifficulty: 3,
-        schema: '/hypixel-farming/assets/schemas/Chimney_Nether_Wart.litematic',
+        schema: '/hypixel-farming/assets/schemas/Stairway_Nether_Wart.litematic',
         authors: ['Harpan']
       }
     ]
@@ -591,7 +591,7 @@ export const CROPS: TCrops = {
         keys: [Keys.W, Keys.A, Keys.LC],
         depth: 3,
         buildDifficulty: 2,
-        schema: '/hypixel-farming/assets/schemas/Stairway_Nether_Wart.litematic',
+        schema: '/hypixel-farming/assets/schemas/Cascade_Melon.litematic',
         authors: ['Daladirn']
       }
     ]
