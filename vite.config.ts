@@ -4,6 +4,7 @@ import svgr from 'vite-plugin-svgr'
 import dts from 'vite-plugin-dts'
 
 // https://vitejs.dev/config/
+// npm run deploy -- -m "commit message" to deploy
 export default defineConfig({
   base: '/hypixel-farming',
   plugins: [
