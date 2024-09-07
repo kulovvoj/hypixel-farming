@@ -73,6 +73,13 @@ export const CROPS: TCrops = {
           [Tags.drowning]: chimney_drowning,
           [Tags.lava_latch]: chimney_lava_latch
         },
+        info: (
+          <p>
+            <strong>This farm should be built</strong> in the <strong>west to east</strong> or{' '}
+            <strong>east to west</strong> directions, because the lava latch is directional and will not work properly
+            when faced north or south.
+          </p>
+        ),
         spawn: (
           <>
             <div>
@@ -161,6 +168,13 @@ export const CROPS: TCrops = {
           [Tags.drowning]: chimney_drowning,
           [Tags.lava_latch]: chimney_lava_latch
         },
+        info: (
+          <p>
+            <strong>This farm should be built</strong> in the <strong>west to east</strong> or{' '}
+            <strong>east to west</strong> directions, because the lava latch is directional and will not work properly
+            when faced north or south.
+          </p>
+        ),
         spawn: (
           <>
             <div>
@@ -249,6 +263,13 @@ export const CROPS: TCrops = {
           [Tags.drowning]: chimney_drowning,
           [Tags.lava_latch]: chimney_lava_latch
         },
+        info: (
+          <p>
+            <strong>This farm should be built</strong> in the <strong>west to east</strong> or{' '}
+            <strong>east to west</strong> directions, because the lava latch is directional and will not work properly
+            when faced north or south.
+          </p>
+        ),
         spawn: (
           <>
             <div>
@@ -337,6 +358,13 @@ export const CROPS: TCrops = {
           [Tags.drowning]: chimney_drowning,
           [Tags.lava_latch]: chimney_lava_latch
         },
+        info: (
+          <p>
+            <strong>This farm should be built</strong> in the <strong>west to east</strong> or{' '}
+            <strong>east to west</strong> directions, because the lava latch is directional and will not work properly
+            when faced north or south.
+          </p>
+        ),
         spawn: (
           <>
             <div>
@@ -418,6 +446,14 @@ export const CROPS: TCrops = {
           [Tags.drowning]: stairway_drowning,
           [Tags.water_latch]: stairway_water_latch
         },
+        info: (
+          <>
+            <p>
+              You may use Ruler's Wand to place ladders, only caveat is that placed ladders will always face north, so{' '}
+              <strong>the farm needs to be built</strong> in the <strong>west to east</strong> direction.
+            </p>
+          </>
+        ),
         spawn: (
           <div>
             <p>
@@ -463,6 +499,13 @@ export const CROPS: TCrops = {
           [Tags.drowning]: chimney_drowning,
           [Tags.lava_latch]: chimney_lava_latch
         },
+        info: (
+          <p>
+            <strong>This farm should be built</strong> in the <strong>west to east</strong> or{' '}
+            <strong>east to west</strong> directions, because the lava latch is directional and will not work properly
+            when faced north or south.
+          </p>
+        ),
         spawn: (
           <>
             <div>
@@ -552,6 +595,20 @@ export const CROPS: TCrops = {
           [Tags.drowning]: cascade_drowning,
           [Tags.water_latch]: cascade_water_latch
         },
+        info: (
+          <>
+            <div>
+              <h5>Steps to build this farm efficiently: </h5>
+              <ol>
+                <li>Build 1 plot of the non-drowning section</li>
+                <li>Paste it in all the other plots</li>
+                <li>When setting up the drowning section, use Ruler's Wand remove the ladders.</li>
+                <li>Finish up by removing blocks at the latch part of the farm and build the latches.</li>
+              </ol>
+            </div>
+            <p>You may use Ruler's Wand to place ladders, only caveat is that placed ladders will always face north.</p>
+          </>
+        ),
         spawn: (
           <>
             <Alert variant='info' className='mt-2'>
@@ -605,6 +662,20 @@ export const CROPS: TCrops = {
           [Tags.drowning]: cascade_drowning,
           [Tags.water_latch]: cascade_water_latch
         },
+        info: (
+          <>
+            <div>
+              <h5>Steps to build this farm efficiently: </h5>
+              <ol>
+                <li>Build 1 plot of the non-drowning section</li>
+                <li>Paste it in all the other plots</li>
+                <li>When setting up the drowning section, use Ruler's Wand remove the ladders.</li>
+                <li>Finish up by removing blocks at the latch part of the farm and build the latches.</li>
+              </ol>
+            </div>
+            <p>You may use Ruler's Wand to place ladders, only caveat is that placed ladders will always face north.</p>
+          </>
+        ),
         spawn: (
           <>
             <Alert variant='info' className='mt-2'>

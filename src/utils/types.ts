@@ -15,7 +15,7 @@ export type TFarm = {
   id: string
   name: string
   description?: string
-  info?: string
+  info?: ReactNode
   banner: string
   pictures?: { [key in Tags]?: string }
   spawn: ReactNode

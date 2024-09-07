@@ -9,6 +9,7 @@ import LavaLatch from './lava-latch/LavaLatch.tsx'
 import WaterLatch from './water-latch/WaterLatch.tsx'
 import BootSwap from './boot-swap/BootSwap.tsx'
 import Spawn from '../spawn/Spawn.tsx'
+import Info from '../info/Info.tsx'
 
 interface IProps {
   farm: TFarm
@@ -38,6 +39,7 @@ export default function TagSection({ farm }: IProps) {
           <Tab key={tag} title={tagSections[tag]?.tab} eventKey={tag} />
         ))}
       </Tabs>
+      {selected === 'info' && <Info farm={farm} />}
       {selected === 'spawn' && <Spawn farm={farm} />}
       {!!TagSection && <TagSection farm={farm} />}
     </div>

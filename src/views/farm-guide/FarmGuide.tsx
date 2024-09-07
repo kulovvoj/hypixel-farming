@@ -3,7 +3,8 @@ import { CROP_PATH, CROPS } from '../../utils/consts'
 import TagSection from '../../components/farms/common/tag-sections/TagSection.tsx'
 import { Card, CardBody } from 'react-bootstrap'
 import Icon, { ICON_SIZE, ICONS } from '../../components/icon/Icon.tsx'
-import { Keys, Tags } from '../../utils/types.ts'
+import { Tags } from '../../utils/types.ts'
+import KeyLayout from '../../components/farm-guide/key-layout/KeyLayout.tsx'
 
 export default function FarmGuide() {
   const { type, id } = useParams<{ type: string; id: string }>() as { type: string; id: string }
@@ -91,39 +92,7 @@ export default function FarmGuide() {
         <Card>
           <CardBody className='py-2'>
             <h3 className='text-center'>Keys</h3>
-            <div className='keyboard-layout'>
-              {farm.keys.includes(Keys.W) ? (
-                <Icon icon={ICONS.KeyWPressed} size={ICON_SIZE.SIZE_FIT} />
-              ) : (
-                <Icon icon={ICONS.KeyW} size={ICON_SIZE.SIZE_FIT} />
-              )}
-              {farm.keys.includes(Keys.A) ? (
-                <Icon icon={ICONS.KeyAPressed} size={ICON_SIZE.SIZE_FIT} />
-              ) : (
-                <Icon icon={ICONS.KeyA} size={ICON_SIZE.SIZE_FIT} />
-              )}
-              {farm.keys.includes(Keys.S) ? (
-                <Icon icon={ICONS.KeySPressed} size={ICON_SIZE.SIZE_FIT} />
-              ) : (
-                <Icon icon={ICONS.KeyS} size={ICON_SIZE.SIZE_FIT} />
-              )}
-              {farm.keys.includes(Keys.D) ? (
-                <Icon icon={ICONS.KeyDPressed} size={ICON_SIZE.SIZE_FIT} />
-              ) : (
-                <Icon icon={ICONS.KeyD} size={ICON_SIZE.SIZE_FIT} />
-              )}
-              {farm.keys.includes(Keys.LC) ? (
-                farm.keys.includes(Keys.RC) ? (
-                  <Icon icon={ICONS.MouseDc} size={ICON_SIZE.SIZE_FIT} />
-                ) : (
-                  <Icon icon={ICONS.MouseLc} size={ICON_SIZE.SIZE_FIT} />
-                )
-              ) : farm.keys.includes(Keys.RC) ? (
-                <Icon icon={ICONS.MouseRc} size={ICON_SIZE.SIZE_FIT} />
-              ) : (
-                <Icon icon={ICONS.Mouse} size={ICON_SIZE.SIZE_FIT} />
-              )}
-            </div>
+            <KeyLayout farm={farm} />
           </CardBody>
         </Card>
       </div>
