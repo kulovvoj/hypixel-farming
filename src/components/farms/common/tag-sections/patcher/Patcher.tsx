@@ -28,7 +28,13 @@ export default function Patcher({ farm }: IProps) {
           minecraft version, crops had the same hitbox no matter the version, which can decrease farm efficiency.
         </p>
         <p>
-          You can get it{' '}
+          You can get Polyfrost's improved fork of the mod, PolyPatcher,{' '}
+          <a href='https://github.com/Polyfrost/PolyPatcher/releasesYou' target='_blank'>
+            here
+          </a>
+        </p>
+        <p>
+          The original mod by Sk1er can be downloaded from{' '}
           <a href='https://sk1er.club/mods/patcher' target='_blank'>
             here
           </a>
