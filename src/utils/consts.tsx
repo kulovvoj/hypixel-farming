@@ -132,7 +132,6 @@ export const CROPS: TCrops = {
           Tags.no_key_swap,
           Tags.drowning,
           Tags.lava_latch,
-          Tags.max_speed,
           Tags.patcher
         ],
         bps: 19.8,
@@ -221,7 +220,6 @@ export const CROPS: TCrops = {
           Tags.no_key_swap,
           Tags.drowning,
           Tags.lava_latch,
-          Tags.max_speed,
           Tags.patcher
         ],
         bps: 19.8,
@@ -310,7 +308,6 @@ export const CROPS: TCrops = {
           Tags.no_key_swap,
           Tags.drowning,
           Tags.lava_latch,
-          Tags.max_speed,
           Tags.patcher
         ],
         bps: 19.8,
@@ -399,7 +396,6 @@ export const CROPS: TCrops = {
           Tags.no_key_swap,
           Tags.drowning,
           Tags.lava_latch,
-          Tags.max_speed,
           Tags.patcher
         ],
         bps: 19.8,
