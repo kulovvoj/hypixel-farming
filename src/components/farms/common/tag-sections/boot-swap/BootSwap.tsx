@@ -48,8 +48,7 @@ export default function BootSwap({ farm }: IProps) {
         </ol>
       </div>
       <Alert variant='warning'>
-        The effect will wear off once you leave your garden, change the speed limit on your Rancher's boots or equip the
-        Frost Walker boots.
+        The effect will wear off once you leave your garden or remove your Rancher's boots.
       </Alert>
       <video src={bootSwapMp4} autoPlay loop className='w-100' style={{ borderRadius: '1rem' }} />
     </div>
