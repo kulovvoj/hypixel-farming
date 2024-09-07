@@ -22,7 +22,7 @@ export default function DrowningCalculator({ farm }: IProps) {
       </p>
       {!!seconds && (
         <p>
-          The drowning section should be <strong>{5 + (seconds * 20) / farm.depth} blocks long.</strong>
+          The drowning section should be <strong>{Math.ceil(5 + (seconds * 20) / farm.depth)} blocks long.</strong>
         </p>
       )}
     </>

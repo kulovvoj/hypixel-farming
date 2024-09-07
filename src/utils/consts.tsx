@@ -407,7 +407,7 @@ export const CROPS: TCrops = {
         keys: [Keys.W, Keys.A, Keys.LC],
         depth: 5,
         buildDifficulty: 3,
-        schema: '/hypixel-farming/assets/schemas/Chimney_Netherwart.litematic',
+        schema: '/hypixel-farming/assets/schemas/Chimney_Nether_Wart.litematic',
         authors: ['Daladirn', 'Harpan']
       }
     ]
