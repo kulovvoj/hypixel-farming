@@ -23,8 +23,8 @@ export type TFarm = {
   keyCount?: number
   depth: number
   tags: Tags[]
-  pitch: string
   yaw: string
+  pitch: string
   speed: number
   enchantments: string[]
   keys: Keys[]

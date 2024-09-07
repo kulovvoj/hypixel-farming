@@ -71,8 +71,8 @@ export default function FarmGuide() {
             <div
               style={{ display: 'grid', gridTemplateColumns: 'auto 1fr', columnGap: '0.75rem', height: 'fit-content' }}
             >
-              <div>Pitch:</div> <strong className='text-right'>{farm.pitch}</strong>
               <div>Yaw:</div> <strong className='text-right'>{farm.yaw}</strong>
+              <div>Pitch:</div> <strong className='text-right'>{farm.pitch}</strong>
               <div>Speed:</div> <strong className='text-right'>{farm.speed}</strong>
             </div>
           </CardBody>
