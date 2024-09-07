@@ -139,7 +139,7 @@ export const CROPS: TCrops = {
         keys: [Keys.W, Keys.A, Keys.LC],
         depth: 5,
         buildDifficulty: 3,
-        schema: '/assets/schemas/Chimney_Wheat.litematic',
+        schema: '/hypixel-farming/assets/schemas/Chimney_Wheat.litematic',
         authors: ['Daladirn', 'Harpan']
       }
     ]
@@ -228,7 +228,7 @@ export const CROPS: TCrops = {
         keys: [Keys.W, Keys.A, Keys.LC],
         depth: 5,
         buildDifficulty: 3,
-        schema: '/assets/schemas/Chimney_Carrot.litematic',
+        schema: '/hypixel-farming/assets/schemas/Chimney_Carrot.litematic',
         authors: ['Daladirn', 'Harpan']
       }
     ]
@@ -317,7 +317,7 @@ export const CROPS: TCrops = {
         keys: [Keys.W, Keys.A, Keys.LC],
         depth: 5,
         buildDifficulty: 3,
-        schema: '/assets/schemas/Chimney_Potato.litematic',
+        schema: '/hypixel-farming/assets/schemas/Chimney_Potato.litematic',
         authors: ['Daladirn', 'Harpan']
       }
     ]
@@ -406,7 +406,7 @@ export const CROPS: TCrops = {
         keys: [Keys.W, Keys.A, Keys.LC],
         depth: 5,
         buildDifficulty: 3,
-        schema: '/assets/schemas/Chimney_Netherwart.litematic',
+        schema: '/hypixel-farming/assets/schemas/Chimney_Netherwart.litematic',
         authors: ['Daladirn', 'Harpan']
       }
     ]
@@ -495,7 +495,7 @@ export const CROPS: TCrops = {
         keys: [Keys.W, Keys.A, Keys.LC],
         depth: 4,
         buildDifficulty: 3,
-        schema: '/assets/schemas/Chimney_Mushroom.litematic',
+        schema: '/hypixel-farming/assets/schemas/Chimney_Mushroom.litematic',
         authors: ['Daladirn', 'Harpan']
       }
     ]
@@ -548,7 +548,7 @@ export const CROPS: TCrops = {
         keys: [Keys.W, Keys.LC],
         depth: 3,
         buildDifficulty: 2,
-        schema: '/assets/schemas/Cascade_Melon.litematic',
+        schema: '/hypixel-farming/assets/schemas/Cascade_Melon.litematic',
         authors: ['Daladirn']
       }
     ]
