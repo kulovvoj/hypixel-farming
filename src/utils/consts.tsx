@@ -17,6 +17,10 @@ import cascade_drowning from '../assets/farms/common/cascade/cascade_drowning.pn
 import cascade_water_latch from '../assets/farms/common/cascade/cascade_water_latch.png'
 import cascade_melon from '../assets/farms/melon/cascade/cascade_melon.png'
 import cascade_pumpkin from '../assets/farms/pumkin/cascade/cascade_pumpkin.png'
+import stairway_spawn from '../assets/farms/common/stairway/stairway_spawn.png'
+import stairway_drowning from '../assets/farms/common/stairway/stairway_drowning.png'
+import stairway_water_latch from '../assets/farms/common/stairway/stairway_water_latch.png'
+import stairway_netherwart from '../assets/farms/nether_wart/stairway/stairway_wart.png'
 
 export const CROP_PATH = `/crops/:type`
 export const FARM_PATH = `${CROP_PATH}/farm/:id`
@@ -409,6 +413,44 @@ export const CROPS: TCrops = {
         buildDifficulty: 3,
         schema: '/hypixel-farming/assets/schemas/Chimney_Nether_Wart.litematic',
         authors: ['Daladirn', 'Harpan']
+      },
+      {
+        id: 'stairway-netherwart',
+        name: 'The Stairway - Nether Wart Edition',
+        banner: stairway_netherwart,
+        pictures: {
+          [Tags.drowning]: stairway_drowning,
+          [Tags.water_latch]: stairway_water_latch
+        },
+        spawn: (
+          <div>
+            <p>
+              Set spawn in the corner as shown. If you get stuck while farming, you can expand the spawning platform and
+              set your spawn farther from the wall.
+            </p>
+            <img
+              alt=''
+              src={stairway_spawn}
+              style={{
+                width: '100%',
+                borderRadius: '1rem',
+                objectFit: 'cover'
+              }}
+            />
+          </div>
+        ),
+        tags: [Tags.bps, Tags.key_count, Tags.no_key_swap, Tags.drowning, Tags.water_latch, Tags.patcher],
+        bps: 19.73,
+        keyCount: 3,
+        pitch: '0.0',
+        yaw: '10.0',
+        speed: 183,
+        enchantments: ['Frost Walker II'],
+        keys: [Keys.W, Keys.A, Keys.LC],
+        depth: 5,
+        buildDifficulty: 3,
+        schema: '/hypixel-farming/assets/schemas/Chimney_Nether_Wart.litematic',
+        authors: ['Harpan']
       }
     ]
   },
@@ -546,10 +588,10 @@ export const CROPS: TCrops = {
         yaw: '-55.9',
         speed: 400,
         enchantments: ['Frost Walker II', 'Depth Strider III', 'Aqua Affinity I'],
-        keys: [Keys.W, Keys.LC],
+        keys: [Keys.W, Keys.A, Keys.LC],
         depth: 3,
         buildDifficulty: 2,
-        schema: '/hypixel-farming/assets/schemas/Cascade_Melon.litematic',
+        schema: '/hypixel-farming/assets/schemas/Stairway_Nether_Wart.litematic',
         authors: ['Daladirn']
       }
     ]
