@@ -808,7 +808,7 @@ export const CROPS: TCrops = {
         pitch: '-55.9',
         speed: 400,
         enchantments: ['Frost Walker II', 'Depth Strider III', 'Aqua Affinity I'],
-        keys: [Keys.W, Keys.A, Keys.LC],
+        keys: [Keys.W, Keys.LC],
         depth: 3,
         buildDifficulty: 2,
         schema: '/hypixel-farming/assets/schemas/Cascade_Melon.litematic',
