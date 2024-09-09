@@ -379,6 +379,10 @@ a {
         grid-template-columns: repeat(6, 1fr);
         gap: 2rem;
 
+        & > .card > .card-body {
+          width: 100%;
+        }
+
         & > :nth-child(1) {
           grid-row-start: 1;
           grid-row-end: 2;
@@ -498,9 +502,13 @@ a {
         grid-template-columns: 1fr;
         gap: 1rem;
 
-        .card {
+        & > .card {
           display: flex;
           align-items: center;
+
+          & > .card-body {
+            width: 100%;
+          }
         }
 
         .keyboard-layout {

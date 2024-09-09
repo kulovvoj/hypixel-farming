@@ -2,7 +2,7 @@ import { Navigate, useParams } from 'react-router-dom'
 import { CROP_PATH } from '../../utils/paths.ts'
 import { CROPS } from '../../utils/crops.ts'
 import TagSection from '../../components/farms/common/tag-sections/TagSection.tsx'
-import { Card, CardBody, Image } from 'react-bootstrap'
+import { Card, CardBody, Image, ProgressBar } from 'react-bootstrap'
 import Icon, { ICON_SIZE, ICONS } from '../../components/common/icon/Icon.tsx'
 import { Tags } from '../../utils/types.ts'
 import KeyLayout from '../../components/farm-guide/key-layout/KeyLayout.tsx'
@@ -68,6 +68,17 @@ export default function FarmGuide() {
                 <Icon icon={ICONS.Download} size={ICON_SIZE.SIZE_32} /> Download
               </a>
             </div>
+            <div className='d-flex flex-row mt-2 align-items-center gap-3 w-100'>
+              <strong>
+                <small>Build difficulty:</small>
+              </strong>
+              <ProgressBar
+                variant={farm.buildDifficulty > 4 ? 'danger' : farm.buildDifficulty > 2 ? 'warning' : 'success'}
+                now={farm.buildDifficulty * 20}
+                className='flex-grow-1'
+                style={{ '--bs-progress-height': '0.5rem' }}
+              />
+            </div>
           </CardBody>
         </Card>
         <Card>
@@ -79,7 +90,8 @@ export default function FarmGuide() {
             <div
               style={{ display: 'grid', gridTemplateColumns: 'auto 1fr', columnGap: '0.75rem', height: 'fit-content' }}
             >
-              <div>Yaw:</div> <strong className='text-right'>{farm.yaw}</strong>
+              <div>Yaw:</div>
+              <strong className='text-right'>{farm.yaw}</strong>
               <div>Pitch:</div> <strong className='text-right'>{farm.pitch}</strong>
               <div>Speed:</div> <strong className='text-right'>{farm.speed}</strong>
             </div>
