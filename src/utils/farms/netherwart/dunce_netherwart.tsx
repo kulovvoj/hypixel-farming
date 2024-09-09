@@ -7,7 +7,7 @@ import dunce_netherwart_banner from '../../../assets/farms/nether_wart/dunce/dun
 
 const dunce_netherwart = {
   id: 'dunce-netherwart',
-  name: 'The Dunce - Nether Wart Edition',
+  name: 'The Dunce',
   banner: dunce_netherwart_banner,
   pictures: {
     [Tags.drowning]: dunce_drowning,

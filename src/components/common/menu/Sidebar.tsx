@@ -1,6 +1,7 @@
 import SidebarSection from './SidebarSection'
 import Icon, { ICON_SIZE } from '../../icon/Icon'
-import { CROP_PATH, CROPS } from '../../../utils/consts'
+import { CROP_PATH } from '../../../utils/paths.ts'
+import { CROPS } from '../../../utils/crops.ts'
 
 export default function Sidebar() {
   return (

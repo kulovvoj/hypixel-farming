@@ -8,7 +8,7 @@ import chimney_carrot_banner from '../../../assets/farms/carrot/chimney/chimney_
 
 const chimney_carrot = {
   id: 'chimney-carrot',
-  name: 'The Chimney - Carrot Edition',
+  name: 'The Chimney',
   banner: chimney_carrot_banner,
   pictures: {
     [Tags.drowning]: chimney_drowning,

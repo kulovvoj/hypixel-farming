@@ -7,7 +7,7 @@ import cascade_pumpkin_banner from '../../../assets/farms/pumkin/cascade/cascade
 
 const cascade_pumpkin = {
   id: 'cascade-pumpkin',
-  name: 'The Cascade - Pumpkin Edition',
+  name: 'The Cascade',
   banner: cascade_pumpkin_banner,
   pictures: {
     [Tags.drowning]: cascade_drowning,

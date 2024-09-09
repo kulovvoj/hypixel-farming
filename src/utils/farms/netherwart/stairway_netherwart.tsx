@@ -6,7 +6,7 @@ import stairway_wart_banner from '../../../assets/farms/nether_wart/stairway/sta
 
 const stairway_netherwart = {
   id: 'stairway-netherwart',
-  name: 'The Stairway - Nether Wart Edition',
+  name: 'The Stairway',
   banner: stairway_wart_banner,
   pictures: {
     [Tags.drowning]: stairway_drowning,

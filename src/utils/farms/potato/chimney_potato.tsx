@@ -8,7 +8,7 @@ import chimney_potato_banner from '../../../assets/farms/potato/chimney/chimney_
 
 const chimney_potato = {
   id: 'chimney-potato',
-  name: 'The Chimney - Potato Edition',
+  name: 'The Chimney',
   banner: chimney_potato_banner,
   pictures: {
     [Tags.drowning]: chimney_drowning,

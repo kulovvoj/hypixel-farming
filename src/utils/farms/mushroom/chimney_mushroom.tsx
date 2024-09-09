@@ -8,7 +8,7 @@ import chimney_mushroom_banner from '../../../assets/farms/mushroom/chimney/chim
 
 const chimney_mushroom = {
   id: 'chimney-mushroom',
-  name: 'The Chimney - Mushroom Edition',
+  name: 'The Chimney',
   banner: chimney_mushroom_banner,
   pictures: {
     [Tags.drowning]: chimney_drowning,

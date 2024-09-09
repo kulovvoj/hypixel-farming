@@ -8,7 +8,7 @@ import chimney_wheat_banner from '../../../assets/farms/wheat/chimney/chimney_wh
 
 const chimney_wheat = {
   id: 'chimney-wheat',
-  name: 'The Chimney - Wheat Edition',
+  name: 'The Chimney',
   banner: chimney_wheat_banner,
   pictures: {
     [Tags.drowning]: chimney_drowning,

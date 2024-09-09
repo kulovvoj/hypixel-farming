@@ -7,7 +7,7 @@ import dunce_wheat_banner from '../../../assets/farms/wheat/dunce/dunce_wheat.pn
 
 const dunce_wheat = {
   id: 'dunce-wheat',
-  name: 'The Dunce - Wheat Edition',
+  name: 'The Dunce',
   banner: dunce_wheat_banner,
   pictures: {
     [Tags.drowning]: dunce_drowning,

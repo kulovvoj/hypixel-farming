@@ -1,5 +1,6 @@
 import { Navigate, useNavigate, useParams } from 'react-router-dom'
-import { CROPS, FARM_PATH } from '../../utils/consts'
+import { FARM_PATH } from '../../utils/paths.ts'
+import { CROPS } from '../../utils/crops.ts'
 import { Badge, Card, CardBody, ProgressBar } from 'react-bootstrap'
 import { TagColors, Tags } from '../../utils/types'
 import whereIsEveryone from '../../assets/where_is_everyone.gif'

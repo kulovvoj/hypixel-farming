@@ -7,7 +7,7 @@ import cascade_melon_banner from '../../../assets/farms/melon/cascade/cascade_me
 
 const cascade_melon = {
   id: 'cascade-melon',
-  name: 'The Cascade - Melon Edition',
+  name: 'The Cascade',
   banner: cascade_melon_banner,
   pictures: {
     [Tags.drowning]: cascade_drowning,

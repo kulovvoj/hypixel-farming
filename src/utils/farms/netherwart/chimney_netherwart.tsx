@@ -8,7 +8,7 @@ import chimney_netherwart_banner from '../../../assets/farms/nether_wart/chimney
 
 const chimney_netherwart = {
   id: 'chimney-netherwart',
-  name: 'The Chimney - Nether Wart Edition',
+  name: 'The Chimney',
   banner: chimney_netherwart_banner,
   pictures: {
     [Tags.drowning]: chimney_drowning,

@@ -10,9 +10,6 @@ import cactus from './farms/cactus/cactus.tsx'
 import sugarcane from './farms/sugarcane/sugarcane.ts'
 import cocoa from './farms/cocoa/cocoa.tsx'
 
-export const CROP_PATH = `/crops/:type`
-export const FARM_PATH = `${CROP_PATH}/farm/:id`
-
 export const CROPS: TCrops = {
   wheat: wheat,
   carrot: carrot,

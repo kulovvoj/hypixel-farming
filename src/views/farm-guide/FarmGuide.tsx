@@ -1,5 +1,6 @@
 import { Navigate, useParams } from 'react-router-dom'
-import { CROP_PATH, CROPS } from '../../utils/consts'
+import { CROP_PATH } from '../../utils/paths.ts'
+import { CROPS } from '../../utils/crops.ts'
 import TagSection from '../../components/farms/common/tag-sections/TagSection.tsx'
 import { Card, CardBody } from 'react-bootstrap'
 import Icon, { ICON_SIZE, ICONS } from '../../components/icon/Icon.tsx'
