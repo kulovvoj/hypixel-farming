@@ -50,7 +50,7 @@ a {
   position: relative;
   overflow: clip;
 
-  & .authors {
+  & .farm-banner-authors {
     position: absolute;
     bottom: 0.5rem;
     right: 0.5rem;
@@ -59,7 +59,29 @@ a {
     font-weight: 500;
     border-radius: 1rem;
   }
+
+  & .farm-banner-icon {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    padding: 0.25rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    aspect-ratio: 1;
+    font-weight: 500;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: 768px) {
+      & > svg {
+        width: 2.5rem !important;
+        height: 2.5rem !important;
+      }
+    }
+  }
 }
+
 
 @media only screen and (min-width: 767.98px) {
   .menu-container {

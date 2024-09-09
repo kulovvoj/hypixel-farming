@@ -7,6 +7,19 @@ import Icon, { ICON_SIZE, ICONS } from '../../components/icon/Icon.tsx'
 import { Tags } from '../../utils/types.ts'
 import KeyLayout from '../../components/farm-guide/key-layout/KeyLayout.tsx'
 
+const iconMap = {
+  wheat: ICONS.Wheat,
+  carrot: ICONS.Carrot,
+  potato: ICONS.Potato,
+  netherwart: ICONS.NetherWart,
+  mushroom: ICONS.RedMushroom,
+  melon: ICONS.MelonSlice,
+  pumpkin: ICONS.Pumpkin,
+  cactus: ICONS.Cactus,
+  sugarcane: ICONS.SugarCane,
+  cocoa: ICONS.CocoaBeans
+}
+
 export default function FarmGuide() {
   const { type, id } = useParams<{ type: string; id: string }>() as { type: string; id: string }
   const farm = CROPS[type].farms.find((farm) => farm.id === id)
@@ -30,7 +43,10 @@ export default function FarmGuide() {
               bottom: '0'
             }}
           />
-          <div className='authors'>by {farm.authors.join(' & ')}</div>
+          <div className='farm-banner-authors'>by {farm.authors.join(' & ')}</div>
+          <div className='farm-banner-icon'>
+            <Icon icon={iconMap[type]} size={ICON_SIZE.SIZE_48} />
+          </div>
         </div>
         <h1 className='text-center mt-3'>{farm?.name}</h1>
       </div>

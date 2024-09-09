@@ -54,6 +54,7 @@ export enum ICON_SIZE {
   SIZE_FIT = '100%',
   SIZE_128 = '8rem',
   SIZE_96 = '6rem',
+  SIZE_72 = '4.5rem',
   SIZE_48 = '3rem',
   SIZE_40 = '2.5rem',
   SIZE_32 = '2rem'
