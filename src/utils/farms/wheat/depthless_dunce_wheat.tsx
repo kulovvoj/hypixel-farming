@@ -26,6 +26,13 @@ const depthless_dunce_wheat = {
         </p>
       </div>
       <div>
+        <h2>Building tips</h2>
+        <p>
+          You may use Ruler's Wand to place ladders, only caveat is that placed ladders will always face north, so{' '}
+          <strong>the farm needs to be built</strong> in the <strong>west to east</strong> direction.
+        </p>
+      </div>
+      <div>
         <h2>Floating Crystal</h2>
         <p>
           Place a{' '}
