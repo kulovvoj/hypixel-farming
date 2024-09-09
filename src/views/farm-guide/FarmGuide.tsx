@@ -7,7 +7,7 @@ import Icon, { ICON_SIZE, ICONS } from '../../components/icon/Icon.tsx'
 import { Tags } from '../../utils/types.ts'
 import KeyLayout from '../../components/farm-guide/key-layout/KeyLayout.tsx'
 
-const iconMap = {
+const iconMap: { [key: string]: any } = {
   wheat: ICONS.Wheat,
   carrot: ICONS.Carrot,
   potato: ICONS.Potato,
