@@ -4,6 +4,7 @@ import dunce_water_latch from '../../../assets/farms/common/dunce/dunce_water_la
 import { Alert } from 'react-bootstrap'
 import dunce_spawn from '../../../assets/farms/common/dunce/dunce_spawn.png'
 import dunce_wheat_banner from '../../../assets/farms/wheat/dunce/dunce_wheat.png'
+import PlaceholderImage from '../../../components/common/placeholder-image/PlaceholderImage.tsx'
 
 const dunce_wheat = {
   id: 'dunce-wheat',
@@ -40,15 +41,7 @@ const dunce_wheat = {
       <Alert variant='info' className='mt-2'>
         Highlighted blocks are temporary and should be removed after setting spawn.
       </Alert>
-      <img
-        src={dunce_spawn}
-        style={{
-          height: '100%',
-          width: '100%',
-          borderRadius: '1rem',
-          objectFit: 'cover'
-        }}
-      />
+      <PlaceholderImage src={dunce_spawn} />
     </>
   ),
   tags: [Tags.bps, Tags.key_count, Tags.boot_swap, Tags.no_key_swap, Tags.drowning, Tags.water_latch, Tags.patcher],

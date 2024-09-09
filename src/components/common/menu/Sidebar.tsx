@@ -1,5 +1,5 @@
 import SidebarSection from './SidebarSection'
-import Icon, { ICON_SIZE } from '../../icon/Icon'
+import Icon, { ICON_SIZE } from '../icon/Icon'
 import { CROP_PATH } from '../../../utils/paths.ts'
 import { CROPS } from '../../../utils/crops.ts'
 

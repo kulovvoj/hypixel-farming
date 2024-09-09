@@ -44,11 +44,47 @@ a {
   text-decoration: none !important;
 }
 
+.img-container {
+  position: relative;
+  overflow: clip;
+  border-radius: 1rem;
+
+  .img-placeholder {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(12px);
+    transition: opacity ease-in 0.2s;
+
+    &.loaded {
+      opacity: 0;
+    }
+  }
+
+  .img-full {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity ease-out 0.2s;
+
+    &.loaded {
+      opacity: 1;
+    }
+  }
+}
+
 .farm-banner {
   border-radius: 1rem;
   width: 100%;
-  position: relative;
   overflow: clip;
+  position: relative;
 
   & .farm-banner-authors {
     position: absolute;

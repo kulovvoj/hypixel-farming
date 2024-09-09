@@ -3,6 +3,7 @@ import stairway_drowning from '../../../assets/farms/common/stairway/stairway_dr
 import stairway_water_latch from '../../../assets/farms/common/stairway/stairway_water_latch.png'
 import stairway_spawn from '../../../assets/farms/common/stairway/stairway_spawn.png'
 import stairway_wart_banner from '../../../assets/farms/nether_wart/stairway/stairway_wart.png'
+import PlaceholderImage from '../../../components/common/placeholder-image/PlaceholderImage.tsx'
 
 const stairway_netherwart = {
   id: 'stairway-netherwart',
@@ -38,15 +39,7 @@ const stairway_netherwart = {
         Set spawn in the corner as shown. If you get stuck while farming, you can expand the spawning platform and set
         your spawn farther from the wall.
       </p>
-      <img
-        alt=''
-        src={stairway_spawn}
-        style={{
-          width: '100%',
-          borderRadius: '1rem',
-          objectFit: 'cover'
-        }}
-      />
+      <PlaceholderImage src={stairway_spawn} />
     </div>
   ),
   tags: [Tags.bps, Tags.key_count, Tags.no_key_swap, Tags.drowning, Tags.water_latch, Tags.patcher],

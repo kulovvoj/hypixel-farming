@@ -1,4 +1,5 @@
 import { TFarm } from '../../../../../utils/types.ts'
+import PlaceholderImage from '../../../../common/placeholder-image/PlaceholderImage.tsx'
 
 interface IProps {
   farm: TFarm
@@ -9,16 +10,7 @@ export default function WaterLatch({ farm }: IProps) {
     <div className='section water-latch responsive-image-grid'>
       {!!farm.pictures?.water_latch && (
         <div>
-          <img
-            alt=''
-            src={farm.pictures.water_latch}
-            style={{
-              height: '100%',
-              width: '100%',
-              borderRadius: '1rem',
-              objectFit: 'cover'
-            }}
-          />
+          <PlaceholderImage src={farm.pictures.water_latch} />
         </div>
       )}
       <div>

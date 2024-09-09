@@ -14,7 +14,7 @@ export default function FarmSelectionPage() {
 
   return (
     <div className='d-flex flex-column justify-content-center'>
-      {crop.farms.length === 0 && <img alt='' src={whereIsEveryone} />}
+      {crop.farms.length === 0 && <img loading='lazy' alt='' src={whereIsEveryone} />}
       <div className='d-flex flex-column gap-3'>
         {crop.farms.map((farm) => (
           <Card

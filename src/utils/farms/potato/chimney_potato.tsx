@@ -5,6 +5,7 @@ import chimney_spawn_01 from '../../../assets/farms/common/chimney/chimney_spawn
 import chimney_spawn_02 from '../../../assets/farms/common/chimney/chimney_spawn_02.png'
 import chimney_spawn_03 from '../../../assets/farms/common/chimney/chimney_spawn_03.png'
 import chimney_potato_banner from '../../../assets/farms/potato/chimney/chimney_potato.png'
+import PlaceholderImage from '../../../components/common/placeholder-image/PlaceholderImage.tsx'
 
 const chimney_potato = {
   id: 'chimney-potato',
@@ -27,51 +28,19 @@ const chimney_potato = {
     <>
       <div>
         <h5>Remove highlighted redstone torch:</h5>
-        <img
-          alt=''
-          src={chimney_spawn_01}
-          style={{
-            width: '100%',
-            borderRadius: '1rem',
-            objectFit: 'cover'
-          }}
-        />
+        <PlaceholderImage src={chimney_spawn_01} />
       </div>
       <div>
         <h5>Place a block and walls like shown:</h5>
-        <img
-          alt=''
-          src={chimney_spawn_02}
-          style={{
-            width: '100%',
-            borderRadius: '1rem',
-            objectFit: 'cover'
-          }}
-        />
+        <PlaceholderImage src={chimney_spawn_02} />
       </div>
       <div>
         <h5>Add 4 snow layers and set your spawn:</h5>
-        <img
-          alt=''
-          src={chimney_spawn_03}
-          style={{
-            width: '100%',
-            borderRadius: '1rem',
-            objectFit: 'cover'
-          }}
-        />
+        <PlaceholderImage src={chimney_spawn_03} />
       </div>
       <div>
         <h5>Remove blocks you've placed and put back the redstone torch:</h5>
-        <img
-          alt=''
-          src={chimney_spawn_01}
-          style={{
-            width: '100%',
-            borderRadius: '1rem',
-            objectFit: 'cover'
-          }}
-        />
+        <PlaceholderImage src={chimney_spawn_01} />
       </div>
     </>
   ),

@@ -1,5 +1,6 @@
 import { TFarm } from '../../../../../utils/types.ts'
 import { Alert, ListGroup, ListGroupItem } from 'react-bootstrap'
+import PlaceholderImage from '../../../../common/placeholder-image/PlaceholderImage.tsx'
 
 interface IProps {
   farm: TFarm
@@ -7,20 +8,7 @@ interface IProps {
 export default function Burning({ farm }: IProps) {
   return (
     <div className='section burning responsive-image-grid'>
-      {!!farm.pictures?.burning && (
-        <div>
-          <img
-            alt=''
-            src={farm.pictures.burning}
-            style={{
-              height: '100%',
-              width: '100%',
-              borderRadius: '1rem',
-              objectFit: 'cover'
-            }}
-          />
-        </div>
-      )}
+      {!!farm.pictures?.burning && <PlaceholderImage src={farm.pictures.burning} />}
       <h2>Burning</h2>
       <div>
         <p>As you farm, you want to die at the end of the farm to spawn back at the start.</p>

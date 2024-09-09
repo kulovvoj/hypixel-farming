@@ -1,4 +1,4 @@
-import { ICONS } from '../../../components/icon/Icon.tsx'
+import { ICONS } from '../../../components/common/icon/Icon.tsx'
 import chimney_netherwart from './chimney_netherwart.tsx'
 import dunce_netherwart from './dunce_netherwart.tsx'
 import stairway_netherwart from './stairway_netherwart.tsx'

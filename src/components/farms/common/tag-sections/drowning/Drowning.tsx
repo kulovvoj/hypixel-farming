@@ -1,6 +1,7 @@
 import { Alert, ListGroup, ListGroupItem } from 'react-bootstrap'
 import DrowningCalculator from './DrowningCalculator.tsx'
 import { TFarm } from '../../../../../utils/types.ts'
+import PlaceholderImage from '../../../../common/placeholder-image/PlaceholderImage.tsx'
 
 interface IProps {
   farm: TFarm
@@ -11,16 +12,7 @@ export default function Drowning({ farm }: IProps) {
     <div className='section drowning responsive-image-grid'>
       {!!farm.pictures?.drowning && (
         <div>
-          <img
-            alt=''
-            src={farm.pictures.drowning}
-            style={{
-              height: '100%',
-              width: '100%',
-              borderRadius: '1rem',
-              objectFit: 'cover'
-            }}
-          />
+          <PlaceholderImage src={farm.pictures.drowning} />
         </div>
       )}
       <div>

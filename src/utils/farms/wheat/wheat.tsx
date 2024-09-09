@@ -1,4 +1,4 @@
-import { ICONS } from '../../../components/icon/Icon.tsx'
+import { ICONS } from '../../../components/common/icon/Icon.tsx'
 import { TCrop } from '../../types.ts'
 import dunce_wheat from './dunce_wheat.tsx'
 import chimney_wheat from './chimney_wheat.tsx'

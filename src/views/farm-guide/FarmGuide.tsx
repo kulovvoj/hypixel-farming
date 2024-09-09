@@ -2,10 +2,12 @@ import { Navigate, useParams } from 'react-router-dom'
 import { CROP_PATH } from '../../utils/paths.ts'
 import { CROPS } from '../../utils/crops.ts'
 import TagSection from '../../components/farms/common/tag-sections/TagSection.tsx'
-import { Card, CardBody } from 'react-bootstrap'
-import Icon, { ICON_SIZE, ICONS } from '../../components/icon/Icon.tsx'
+import { Card, CardBody, Image } from 'react-bootstrap'
+import Icon, { ICON_SIZE, ICONS } from '../../components/common/icon/Icon.tsx'
 import { Tags } from '../../utils/types.ts'
 import KeyLayout from '../../components/farm-guide/key-layout/KeyLayout.tsx'
+import { useEffect, useRef, useState } from 'react'
+import PlaceholderImage from '../../components/common/placeholder-image/PlaceholderImage.tsx'
 
 const iconMap: { [key: string]: any } = {
   wheat: ICONS.Wheat,
@@ -31,18 +33,7 @@ export default function FarmGuide() {
     <div className='farm'>
       <div>
         <div className='farm-banner'>
-          <img
-            alt=''
-            src={farm?.banner}
-            style={{
-              width: '100%',
-              position: 'relative',
-              top: '0',
-              left: '0',
-              right: '0',
-              bottom: '0'
-            }}
-          />
+          <PlaceholderImage src={farm.banner} />
           <div className='farm-banner-authors'>by {farm.authors.join(' & ')}</div>
           <div className='farm-banner-icon'>
             <Icon icon={iconMap[type]} size={ICON_SIZE.SIZE_48} />

@@ -1,5 +1,6 @@
 import { TFarm } from '../../../../../utils/types.ts'
 import { Alert } from 'react-bootstrap'
+import PlaceholderImage from '../../../../common/placeholder-image/PlaceholderImage.tsx'
 
 interface IProps {
   farm: TFarm
@@ -9,16 +10,7 @@ export default function LavaLatch({ farm }: IProps) {
     <div className='section lava-latch responsive-image-grid'>
       {!!farm.pictures?.lava_latch && (
         <div>
-          <img
-            alt=''
-            src={farm.pictures.lava_latch}
-            style={{
-              height: '100%',
-              width: '100%',
-              borderRadius: '1rem',
-              objectFit: 'cover'
-            }}
-          />
+          <PlaceholderImage src={farm.pictures.lava_latch} />
         </div>
       )}
       <div>

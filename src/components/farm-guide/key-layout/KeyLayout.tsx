@@ -1,5 +1,5 @@
 import { Keys, TFarm } from '../../../utils/types.ts'
-import Icon, { ICON_SIZE, ICONS } from '../../icon/Icon.tsx'
+import Icon, { ICON_SIZE, ICONS } from '../../common/icon/Icon.tsx'
 
 interface IProps {
   farm: TFarm

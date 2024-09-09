@@ -6,6 +6,7 @@ import depthless_dunce_spawn from '../../../assets/farms/common/depthless-dunce/
 import depthless_dunce_wheat_banner from '../../../assets/farms/wheat/depthless-dunce/depthless_dunce_wheat.png'
 import { Link } from 'react-router-dom'
 import { FARM_PATH } from '../../paths.ts'
+import PlaceholderImage from '../../../components/common/placeholder-image/PlaceholderImage.tsx'
 
 const depthless_dunce_wheat = {
   id: 'depthless-dunce-wheat',
@@ -50,15 +51,7 @@ const depthless_dunce_wheat = {
       <Alert variant='info' className='mt-2'>
         Highlighted blocks are temporary and should be removed after setting spawn.
       </Alert>
-      <img
-        src={depthless_dunce_spawn}
-        style={{
-          height: '100%',
-          width: '100%',
-          borderRadius: '1rem',
-          objectFit: 'cover'
-        }}
-      />
+      <PlaceholderImage src={depthless_dunce_spawn} />
     </>
   ),
   tags: [Tags.bps, Tags.key_count, Tags.no_key_swap, Tags.drowning, Tags.water_latch, Tags.patcher],

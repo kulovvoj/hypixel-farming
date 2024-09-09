@@ -1,4 +1,5 @@
 import { TFarm } from '../../../../../utils/types.ts'
+import PlaceholderImage from '../../../../common/placeholder-image/PlaceholderImage.tsx'
 
 interface IProps {
   farm: TFarm
@@ -9,16 +10,7 @@ export default function Patcher({ farm }: IProps) {
     <div className='section patcher responsive-image-grid'>
       {!!farm.pictures?.patcher && (
         <div>
-          <img
-            alt=''
-            src={farm.pictures.patcher}
-            style={{
-              height: '100%',
-              width: '100%',
-              borderRadius: '1rem',
-              objectFit: 'cover'
-            }}
-          />
+          <PlaceholderImage src={farm.pictures.patcher} />
         </div>
       )}
       <div>

@@ -4,6 +4,7 @@ import cascade_drowning from '../../../assets/farms/common/cascade/cascade_drown
 import cascade_water_latch from '../../../assets/farms/common/cascade/cascade_water_latch.png'
 import cascade_spawn from '../../../assets/farms/common/cascade/cascade_spawn.png'
 import cascade_pumpkin_banner from '../../../assets/farms/pumkin/cascade/cascade_pumpkin.png'
+import PlaceholderImage from '../../../components/common/placeholder-image/PlaceholderImage.tsx'
 
 const cascade_pumpkin = {
   id: 'cascade-pumpkin',
@@ -33,16 +34,7 @@ const cascade_pumpkin = {
       <Alert variant='info' className='mt-2'>
         Highlighted blocks are temporary and should be removed after setting spawn.
       </Alert>
-      <img
-        alt=''
-        src={cascade_spawn}
-        style={{
-          height: '100%',
-          width: '100%',
-          borderRadius: '1rem',
-          objectFit: 'cover'
-        }}
-      />
+      <PlaceholderImage src={cascade_spawn} />
     </>
   ),
   tags: [Tags.bps, Tags.key_count, Tags.boot_swap, Tags.no_key_swap, Tags.drowning, Tags.water_latch, Tags.max_speed],

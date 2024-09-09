@@ -1,4 +1,4 @@
-import { ICONS } from '../../../components/icon/Icon.tsx'
+import { ICONS } from '../../../components/common/icon/Icon.tsx'
 import { TCrop } from '../../types.ts'
 import cascade_melon from './cascade_melon.tsx'
 
