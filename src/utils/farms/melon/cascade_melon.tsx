@@ -1,18 +1,14 @@
 import { Alert } from 'react-bootstrap'
 import { Keys, Tags } from '../../types.ts'
-import cascade_drowning from '../../../assets/farms/common/cascade/cascade_drowning.png'
-import cascade_water_latch from '../../../assets/farms/common/cascade/cascade_water_latch.png'
-import cascade_spawn from '../../../assets/farms/common/cascade/cascade_spawn.png'
-import cascade_melon_banner from '../../../assets/farms/melon/cascade/cascade_melon.png'
 import PlaceholderImage from '../../../components/common/placeholder-image/PlaceholderImage.tsx'
 
 const cascade_melon = {
   id: 'cascade-melon',
   name: 'The Cascade',
-  banner: cascade_melon_banner,
+  banner: '/hypixel-farming/assets/farms/melon/cascade/cascade_melon.png',
   pictures: {
-    [Tags.drowning]: cascade_drowning,
-    [Tags.water_latch]: cascade_water_latch
+    [Tags.drowning]: '/hypixel-farming/assets/farms/common/cascade/cascade_drowning.png',
+    [Tags.water_latch]: '/hypixel-farming/assets/farms/common/cascade/cascade_water_latch.png'
   },
   info: (
     <>
@@ -34,7 +30,7 @@ const cascade_melon = {
       <Alert variant='info' className='mt-2'>
         Highlighted blocks are temporary and should be removed after setting spawn.
       </Alert>
-      <PlaceholderImage src={cascade_spawn} />
+      <PlaceholderImage src='/hypixel-farming/assets/farms/common/cascade/cascade_spawn.png' />
     </>
   ),
   tags: [Tags.bps, Tags.key_count, Tags.boot_swap, Tags.no_key_swap, Tags.drowning, Tags.water_latch, Tags.max_speed],

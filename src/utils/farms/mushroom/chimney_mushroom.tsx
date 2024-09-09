@@ -1,19 +1,13 @@
 import { Keys, Tags } from '../../types.ts'
-import chimney_drowning from '../../../assets/farms/common/chimney/chimney_drowning.png'
-import chimney_lava_latch from '../../../assets/farms/common/chimney/chimney_lava_latch.png'
-import chimney_spawn_01 from '../../../assets/farms/common/chimney/chimney_spawn_01.png'
-import chimney_spawn_02 from '../../../assets/farms/common/chimney/chimney_spawn_02.png'
-import chimney_spawn_03 from '../../../assets/farms/common/chimney/chimney_spawn_03.png'
-import chimney_mushroom_banner from '../../../assets/farms/mushroom/chimney/chimney_mushroom.png'
 import PlaceholderImage from '../../../components/common/placeholder-image/PlaceholderImage.tsx'
 
 const chimney_mushroom = {
   id: 'chimney-mushroom',
   name: 'The Chimney',
-  banner: chimney_mushroom_banner,
+  banner: '/hypixel-farming/assets/farms/mushroom/chimney/chimney_mushroom.png',
   pictures: {
-    [Tags.drowning]: chimney_drowning,
-    [Tags.lava_latch]: chimney_lava_latch
+    [Tags.drowning]: '/hypixel-farming/assets/farms/common/chimney/chimney_drowning.png',
+    [Tags.lava_latch]: '/hypixel-farming/assets/farms/common/chimney/chimney_lava_latch.png'
   },
   info: (
     <div>
@@ -28,19 +22,19 @@ const chimney_mushroom = {
     <>
       <div>
         <h5>Remove highlighted redstone torch:</h5>
-        <PlaceholderImage src={chimney_spawn_01} />
+        <PlaceholderImage src='/hypixel-farming/assets/farms/common/chimney/chimney_spawn_01.png' />
       </div>
       <div>
         <h5>Place a block and walls like shown:</h5>
-        <PlaceholderImage src={chimney_spawn_02} />
+        <PlaceholderImage src='/hypixel-farming/assets/farms/common/chimney/chimney_spawn_02.png' />
       </div>
       <div>
         <h5>Add 4 snow layers and set your spawn:</h5>
-        <PlaceholderImage src={chimney_spawn_03} />
+        <PlaceholderImage src='/hypixel-farming/assets/farms/common/chimney/chimney_spawn_03.png' />
       </div>
       <div>
         <h5>Remove blocks you've placed and put back the redstone torch:</h5>
-        <PlaceholderImage src={chimney_spawn_01} />
+        <PlaceholderImage src='/hypixel-farming/assets/farms/common/chimney/chimney_spawn_01.png' />
       </div>
     </>
   ),

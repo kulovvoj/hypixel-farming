@@ -1,9 +1,5 @@
 import { Alert } from 'react-bootstrap'
 import { Keys, Tags } from '../../types.ts'
-import depthless_dunce_drowning from '../../../assets/farms/common/depthless-dunce/depthless_dunce_drowning.png'
-import depthless_dunce_water_latch from '../../../assets/farms/common/depthless-dunce/depthless_dunce_water_latch.png'
-import depthless_dunce_spawn from '../../../assets/farms/common/depthless-dunce/depthless_dunce_spawn.png'
-import depthless_dunce_wheat_banner from '../../../assets/farms/wheat/depthless-dunce/depthless_dunce_wheat.png'
 import { Link } from 'react-router-dom'
 import { FARM_PATH } from '../../paths.ts'
 import PlaceholderImage from '../../../components/common/placeholder-image/PlaceholderImage.tsx'
@@ -11,10 +7,10 @@ import PlaceholderImage from '../../../components/common/placeholder-image/Place
 const depthless_dunce_wheat = {
   id: 'depthless-dunce-wheat',
   name: 'The Depthless Dunce',
-  banner: depthless_dunce_wheat_banner,
+  banner: '/hypixel-farming/assets/farms/wheat/depthless-dunce/depthless_dunce_wheat.png',
   pictures: {
-    [Tags.drowning]: depthless_dunce_drowning,
-    [Tags.water_latch]: depthless_dunce_water_latch
+    [Tags.drowning]: '/hypixel-farming/assets/farms/common/depthless-dunce/depthless_dunce_drowning.png',
+    [Tags.water_latch]: '/hypixel-farming/assets/farms/common/depthless-dunce/depthless_dunce_water_latch.png'
   },
   info: (
     <>
@@ -51,7 +47,7 @@ const depthless_dunce_wheat = {
       <Alert variant='info' className='mt-2'>
         Highlighted blocks are temporary and should be removed after setting spawn.
       </Alert>
-      <PlaceholderImage src={depthless_dunce_spawn} />
+      <PlaceholderImage src='/hypixel-farming/assets/farms/common/depthless-dunce/depthless_dunce_spawn.png' />
     </>
   ),
   tags: [Tags.bps, Tags.key_count, Tags.no_key_swap, Tags.drowning, Tags.water_latch, Tags.patcher],

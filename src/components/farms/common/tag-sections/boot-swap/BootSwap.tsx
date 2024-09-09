@@ -1,5 +1,5 @@
 import { TFarm } from '../../../../../utils/types.ts'
-import bootSwapMp4 from '../../../../../assets/farms/bootswap.mp4'
+import bootSwapMp4 from '../../../../../assets/bootswap.mp4'
 import { Alert } from 'react-bootstrap'
 import PlaceholderImage from '../../../../common/placeholder-image/PlaceholderImage.tsx'
 

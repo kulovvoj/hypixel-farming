@@ -1,18 +1,14 @@
 import { Alert } from 'react-bootstrap'
 import { Keys, Tags } from '../../types.ts'
-import dunce_drowning from '../../../assets/farms/common/dunce/dunce_drowning.png'
-import dunce_water_latch from '../../../assets/farms/common/dunce/dunce_water_latch.png'
-import dunce_spawn from '../../../assets/farms/common/dunce/dunce_spawn.png'
-import dunce_netherwart_banner from '../../../assets/farms/nether_wart/dunce/dunce_netherwart.png'
 import PlaceholderImage from '../../../components/common/placeholder-image/PlaceholderImage.tsx'
 
 const dunce_netherwart = {
   id: 'dunce-netherwart',
   name: 'The Dunce',
-  banner: dunce_netherwart_banner,
+  banner: '/hypixel-farming/assets/farms/nether_wart/dunce/dunce_netherwart.png',
   pictures: {
-    [Tags.drowning]: dunce_drowning,
-    [Tags.water_latch]: dunce_water_latch
+    [Tags.drowning]: '/hypixel-farming/assets/farms/common/dunce/dunce_drowning.png',
+    [Tags.water_latch]: '/hypixel-farming/assets/farms/common/dunce/dunce_water_latch.png'
   },
   info: (
     <>
@@ -41,7 +37,7 @@ const dunce_netherwart = {
       <Alert variant='info' className='mt-2'>
         Highlighted blocks are temporary and should be removed after setting spawn.
       </Alert>
-      <PlaceholderImage src={dunce_spawn} />
+      <PlaceholderImage src='/hypixel-farming/assets/farms/common/dunce/dunce_spawn.png' />
     </>
   ),
   tags: [Tags.bps, Tags.key_count, Tags.boot_swap, Tags.no_key_swap, Tags.drowning, Tags.water_latch, Tags.patcher],
