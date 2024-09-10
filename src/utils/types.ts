@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import { FunctionComponent, ReactNode, SVGAttributes } from 'react'
 
 export type TCrops = {
   [key: string]: TCrop
@@ -6,7 +6,7 @@ export type TCrops = {
 
 export type TCrop = {
   id: string
-  icon: any
+  icon: FunctionComponent<SVGAttributes<SVGElement>>
   label: string
   farms: TFarm[]
 }

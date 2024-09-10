@@ -1,6 +1,6 @@
 import { Tags, TFarm } from '../../../../utils/types.ts'
 import Drowning from './drowning/Drowning.tsx'
-import React, { useMemo, useState } from 'react'
+import React, { FC, useMemo, useState } from 'react'
 import { Tab, Tabs } from 'react-bootstrap'
 import Patcher from './patcher/Patcher.tsx'
 import Burning from './burning/Burning.tsx'
@@ -54,7 +54,7 @@ export default function TagSection({ farm }: IProps) {
 }
 
 const tagSections: {
-  [key: string]: { component: any; tab: string }
+  [key: string]: { component: FC<{ farm: TFarm }>; tab: string }
 } = {
   [Tags.drowning]: {
     tab: 'Drowning',

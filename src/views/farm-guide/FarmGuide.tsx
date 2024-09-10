@@ -2,14 +2,14 @@ import { Navigate, useParams } from 'react-router-dom'
 import { CROP_PATH } from '../../utils/paths.ts'
 import { CROPS } from '../../utils/crops.ts'
 import TagSection from '../../components/farms/common/tag-sections/TagSection.tsx'
-import { Card, CardBody, Image, ProgressBar } from 'react-bootstrap'
+import { Card, CardBody, ProgressBar } from 'react-bootstrap'
 import Icon, { ICON_SIZE, ICONS } from '../../components/common/icon/Icon.tsx'
 import { Tags } from '../../utils/types.ts'
 import KeyLayout from '../../components/farm-guide/key-layout/KeyLayout.tsx'
-import { useEffect, useRef, useState } from 'react'
 import PlaceholderImage from '../../components/common/placeholder-image/PlaceholderImage.tsx'
+import { FunctionComponent, SVGAttributes } from 'react'
 
-const iconMap: { [key: string]: any } = {
+const iconMap: { [key: string]: FunctionComponent<SVGAttributes<SVGElement>> } = {
   wheat: ICONS.Wheat,
   carrot: ICONS.Carrot,
   potato: ICONS.Potato,

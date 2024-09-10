@@ -1,7 +1,5 @@
 import { Alert } from 'react-bootstrap'
 import { Keys, Tags } from '../../types.ts'
-import { Link } from 'react-router-dom'
-import { FARM_PATH } from '../../paths.ts'
 import PlaceholderImage from '../../../components/common/placeholder-image/PlaceholderImage.tsx'
 
 const depthless_dunce_carrot = {

@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import { CROP_PATH, FARM_PATH } from '../../utils/paths.ts'
 import AppOverview from '../../views/app-overview/AppOverview'
 import FarmSelectionPage from '../../views/farm-selection/FarmSelectionPage'
