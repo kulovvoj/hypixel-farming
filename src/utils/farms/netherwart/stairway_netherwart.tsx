@@ -14,7 +14,7 @@ const stairway_netherwart = {
       <div>
         <h2>Building tips</h2>
         <p>
-          You may use Ruler's Wand to place ladders, only caveat is that placed ladders will always face north, so{' '}
+          You may use Ruler's Wand to place ladders. The only caveat is that placed ladders will always face north, so{' '}
           <strong>the farm needs to be built</strong> in the <strong>west to east</strong> direction.
         </p>
       </div>

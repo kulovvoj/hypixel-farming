@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 import { FARM_PATH } from '../../paths.ts'
 import PlaceholderImage from '../../../components/common/placeholder-image/PlaceholderImage.tsx'
 
-const depthless_dunce_wheat = {
-  id: 'depthless-dunce-wheat',
+const depthless_dunce_carrot = {
+  id: 'depthless-dunce-carrot',
   name: 'The Depthless Dunce',
-  banner: '/hypixel-farming/assets/farms/wheat/depthless-dunce/depthless_dunce_wheat.png',
+  banner: '/hypixel-farming/assets/farms/carrot/depthless-dunce/depthless_dunce_carrot.png',
   pictures: {
     [Tags.drowning]: '/hypixel-farming/assets/farms/common/depthless-dunce/depthless_dunce_drowning.png',
     [Tags.water_latch]: '/hypixel-farming/assets/farms/common/depthless-dunce/depthless_dunce_water_latch.png'
@@ -16,28 +16,13 @@ const depthless_dunce_wheat = {
     <>
       <div>
         <h2>Info</h2>
-        <p>
-          Simple to build, yet very efficient farm. Compared to{' '}
-          <Link to={FARM_PATH.replace(':type', 'wheat').replace(':id', 'dunce-wheat')}>The Dunce</Link>, it trades
-          efficiency for not requiring boot swap.
-        </p>
+        <p>Simple to build, yet very efficient farm. Not having to use boot swap is a cherry on top!</p>
       </div>
       <div>
         <h2>Building tips</h2>
         <p>
           You may use Ruler's Wand to place ladders. The only caveat is that placed ladders will always face north, so{' '}
           <strong>the farm needs to be built</strong> in the <strong>west to east</strong> direction.
-        </p>
-      </div>
-      <div>
-        <h2>Floating Crystal</h2>
-        <p>
-          Place a{' '}
-          <a href='https://wiki.hypixel.net/Floating_Crystal#Wheat_' target='_blank'>
-            Wheat Crystal
-          </a>{' '}
-          on top of the hay bale block. It will replenish the latch area with fully grown Wheat before you respawn for
-          increased rates.
         </p>
       </div>
     </>
@@ -51,7 +36,7 @@ const depthless_dunce_wheat = {
     </>
   ),
   tags: [Tags.bps, Tags.key_count, Tags.no_key_swap, Tags.drowning, Tags.water_latch, Tags.patcher],
-  bps: 19.82,
+  bps: 19.74,
   keyCount: 2,
   yaw: '-166.6',
   pitch: '-1.0',
@@ -60,8 +45,8 @@ const depthless_dunce_wheat = {
   keys: [Keys.W, Keys.LC],
   depth: 5,
   buildDifficulty: 1,
-  schema: '/hypixel-farming/assets/schemas/Depthless_Dunce_Wheat.litematic',
+  schema: '/hypixel-farming/assets/schemas/Depthless_Dunce_Carrot.litematic',
   authors: ['Daladirn']
 }
 
-export default depthless_dunce_wheat
+export default depthless_dunce_carrot

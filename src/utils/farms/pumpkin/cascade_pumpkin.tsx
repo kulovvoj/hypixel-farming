@@ -22,7 +22,7 @@ const cascade_pumpkin = {
           <li>Finish up by removing blocks at the latch part of the farm and build the latches.</li>
         </ol>
       </div>
-      <p>You may use Ruler's Wand to place ladders, only caveat is that placed ladders will always face north.</p>
+      <p>You may use Ruler's Wand to place ladders. The only caveat is that placed ladders will always face north.</p>
     </>
   ),
   spawn: (
