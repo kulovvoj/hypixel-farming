@@ -23,6 +23,13 @@ const cascade_pumpkin = {
         </ol>
       </div>
       <p>You may use Ruler's Wand to place ladders. The only caveat is that placed ladders will always face north.</p>
+      <p>
+        Strings are hard to see. You can download a simple resource pack, which makes strings red,{' '}
+        <a href='/hypixel-farming/assets/resource-packs/red-string.zip' download>
+          here
+        </a>
+        .
+      </p>
     </>
   ),
   spawn: (

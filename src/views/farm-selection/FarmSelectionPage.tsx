@@ -14,6 +14,7 @@ export default function FarmSelectionPage() {
 
   return (
     <div className='d-flex flex-column justify-content-center'>
+      <h1 className='text-center mb-4'>{crop.label} Farm Designs</h1>
       {crop.farms.length === 0 && <img loading='lazy' alt='' src={whereIsEveryone} />}
       <div className='d-flex flex-column gap-3'>
         {crop.farms.map((farm) => (

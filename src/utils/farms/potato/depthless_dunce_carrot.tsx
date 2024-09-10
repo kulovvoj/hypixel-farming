@@ -22,6 +22,13 @@ const depthless_dunce_potato = {
           You may use Ruler's Wand to place ladders. The only caveat is that placed ladders will always face north, so{' '}
           <strong>the farm needs to be built</strong> in the <strong>west to east</strong> direction.
         </p>
+        <p>
+          Strings are hard to see. You can download a simple resource pack, which makes strings red,{' '}
+          <a href='/hypixel-farming/assets/resource-packs/red-string.zip' download>
+            here
+          </a>
+          .
+        </p>
       </div>
     </>
   ),

@@ -1,16 +1,27 @@
 import { Keys, Tags } from '../../types.ts'
 import PlaceholderImage from '../../../components/common/placeholder-image/PlaceholderImage.tsx'
 
-const stairway_netherwart = {
-  id: 'stairway-netherwart',
+const stairway_wheat = {
+  id: 'stairway-wheat',
   name: 'The Stairway',
-  banner: '/hypixel-farming/assets/farms/nether_wart/stairway/stairway_wart.png',
+  banner: '/hypixel-farming/assets/farms/wheat/stairway/stairway_wheat.png',
   pictures: {
     [Tags.drowning]: '/hypixel-farming/assets/farms/common/stairway/stairway_drowning.png',
     [Tags.water_latch]: '/hypixel-farming/assets/farms/common/stairway/stairway_water_latch.png'
   },
   info: (
     <>
+      <div>
+        <h2>Floating Crystal</h2>
+        <p>
+          Place a{' '}
+          <a href='https://wiki.hypixel.net/Floating_Crystal#Wheat_' target='_blank'>
+            Wheat Crystal
+          </a>{' '}
+          on top of the block with the sign. It will replenish the latch area with fully grown Wheat before you respawn
+          for increased rates.
+        </p>
+      </div>
       <div>
         <h2>Building tips</h2>
         <p>
@@ -25,15 +36,6 @@ const stairway_netherwart = {
           .
         </p>
       </div>
-      <h2>Floating Crystal</h2>
-      <p>
-        Place a{' '}
-        <a href='https://wiki.hypixel.net/Floating_Crystal#Nether_Wart_' target='_blank'>
-          Nether Wart Crystal
-        </a>{' '}
-        on top of the block with the sign. It will replenish the latch area with fully grown Nether Wart before you
-        respawn for increased rates.
-      </p>
     </>
   ),
   spawn: (
@@ -55,8 +57,8 @@ const stairway_netherwart = {
   keys: [Keys.W, Keys.A, Keys.LC],
   depth: 5,
   buildDifficulty: 2,
-  schema: '/hypixel-farming/assets/schemas/Stairway_Nether_Wart.litematic',
+  schema: '/hypixel-farming/assets/schemas/Stairway_Wheat.litematic',
   authors: ['Harpan']
 }
 
-export default stairway_netherwart
+export default stairway_wheat

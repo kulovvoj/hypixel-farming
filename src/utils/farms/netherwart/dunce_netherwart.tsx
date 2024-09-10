@@ -30,6 +30,16 @@ const dunce_netherwart = {
           you respawn for increased rates.
         </p>
       </div>
+      <div>
+        <h2>Building tips</h2>
+        <p>
+          Strings are hard to see. You can download a simple resource pack, which makes strings red,{' '}
+          <a href='/hypixel-farming/assets/resource-packs/red-string.zip' download>
+            here
+          </a>
+          .
+        </p>
+      </div>
     </>
   ),
   spawn: (

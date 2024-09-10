@@ -16,6 +16,13 @@ const chimney_mushroom = {
         <strong>This farm should be built</strong> in the <strong>west to east</strong> or <strong>east to west</strong>{' '}
         directions, because the lava latch is directional and will not work properly when faced north or south.
       </p>
+      <p>
+        Strings are hard to see. You can download a simple resource pack, which makes strings red,{' '}
+        <a href='/hypixel-farming/assets/resource-packs/red-string.zip' download>
+          here
+        </a>
+        .
+      </p>
     </div>
   ),
   spawn: (
