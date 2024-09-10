@@ -66,7 +66,7 @@ export default function Drowning({ farm }: IProps) {
         <DrowningCalculator farm={farm} />
       </div>
       <Alert variant='warning'>
-        <Alert.Heading>Drowning on your Garden makes you lose coins.</Alert.Heading>
+        <Alert.Heading>Drowning on your Garden makes you lose coins</Alert.Heading>
         That means that you'll either need at least two Bank V enchantments on your equipment, or have the Cookie Buff
         active.
       </Alert>

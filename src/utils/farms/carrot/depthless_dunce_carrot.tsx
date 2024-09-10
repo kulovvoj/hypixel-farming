@@ -30,6 +30,7 @@ const depthless_dunce_carrot = {
           .
         </p>
       </div>
+      <Alert variant='info'>Do not place water source blocks next to the farmland in the drowning section.</Alert>
     </>
   ),
   spawn: (

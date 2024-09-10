@@ -67,7 +67,7 @@ export default function Burning({ farm }: IProps) {
         </ListGroup>
       </div>
       <Alert variant='warning'>
-        <Alert.Heading>Dying on your Garden makes you lose coins.</Alert.Heading>
+        <Alert.Heading>Dying on your Garden makes you lose coins</Alert.Heading>
         That means that you'll either need at least two Bank V enchantments on your equipment, or have the Cookie Buff
         active.
       </Alert>
