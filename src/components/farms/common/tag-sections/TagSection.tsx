@@ -11,6 +11,7 @@ import BootSwap from './boot-swap/BootSwap.tsx'
 import Spawn from '../spawn/Spawn.tsx'
 import Info from '../info/Info.tsx'
 import { useLocation } from 'react-router-dom'
+import Litematica from '../litematica/Litematica.tsx'
 
 interface IProps {
   farm: TFarm
@@ -45,9 +46,11 @@ export default function TagSection({ farm }: IProps) {
         {filteredTags.map((tag) => (
           <Tab key={tag} title={tagSections[tag]?.tab} eventKey={tag} />
         ))}
+        <Tab title='Litematica' eventKey='litematica' />
       </Tabs>
       {selected === 'info' && <Info farm={farm} />}
       {selected === 'spawn' && <Spawn farm={farm} />}
+      {selected === 'litematica' && <Litematica />}
       {!!TagSection && <TagSection farm={farm} />}
     </div>
   )
