@@ -50,7 +50,16 @@ const dunce_netherwart = {
       <PlaceholderImage src='/hypixel-farming/assets/farms/common/dunce/dunce_spawn.png' />
     </>
   ),
-  tags: [Tags.bps, Tags.key_count, Tags.boot_swap, Tags.no_key_swap, Tags.drowning, Tags.water_latch, Tags.patcher],
+  tags: [
+    Tags.bps,
+    Tags.key_count,
+    Tags.boot_swap,
+    Tags.no_key_swap,
+    Tags.drowning,
+    Tags.water_latch,
+    Tags.patcher,
+    Tags.max_speed
+  ],
   bps: 19.83,
   keyCount: 2,
   yaw: '-13.4',
