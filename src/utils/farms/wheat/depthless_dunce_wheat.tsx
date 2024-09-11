@@ -58,7 +58,7 @@ const depthless_dunce_wheat = {
       <PlaceholderImage src='/hypixel-farming/assets/farms/common/depthless-dunce/depthless_dunce_spawn.png' />
     </>
   ),
-  tags: [Tags.bps, Tags.key_count, Tags.no_key_swap, Tags.drowning, Tags.water_latch, Tags.patcher],
+  tags: [Tags.bps, Tags.key_count, Tags.no_key_swap, Tags.drowning, Tags.water_latch, Tags.patcher, Tags.max_speed],
   bps: 19.82,
   keyCount: 2,
   yaw: '-166.6',
