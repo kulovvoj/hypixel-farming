@@ -27,6 +27,14 @@ export default function Patcher({ farm }: IProps) {
           .
         </p>
         <p>
+          To use particle features like <i>'Disable Block Breaking Particles'</i> with PolyPatcher, you should
+          additionally download OverflowParticles mod{' '}
+          <a href='https://github.com/Polyfrost/OverflowParticles/releases' target='_blank'>
+            here
+          </a>
+          .
+        </p>
+        <p>
           The original mod by Sk1er can be downloaded from{' '}
           <a href='https://sk1er.club/mods/patcher' target='_blank'>
             here

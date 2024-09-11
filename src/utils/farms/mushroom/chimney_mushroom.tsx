@@ -45,16 +45,7 @@ const chimney_mushroom = {
       </div>
     </>
   ),
-  tags: [
-    Tags.bps,
-    Tags.key_count,
-    Tags.boot_swap,
-    Tags.no_key_swap,
-    Tags.drowning,
-    Tags.lava_latch,
-    Tags.max_speed,
-    Tags.patcher
-  ],
+  tags: [Tags.bps, Tags.key_count, Tags.boot_swap, Tags.no_key_swap, Tags.drowning, Tags.lava_latch, Tags.max_speed],
   bps: 18.77,
   keyCount: 3,
   yaw: '28.5',
