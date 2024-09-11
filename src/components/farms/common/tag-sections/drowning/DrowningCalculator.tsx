@@ -15,8 +15,8 @@ export default function DrowningCalculator({ farm }: IProps) {
         <input
           type='number'
           onChange={(e) =>
-            Number.parseInt(e.currentTarget.value) > 0
-              ? setSeconds(Number.parseInt(e.currentTarget.value))
+            Number.parseFloat(e.currentTarget.value) > 0
+              ? setSeconds(Number.parseFloat(e.currentTarget.value))
               : setSeconds(undefined)
           }
           style={{ width: '4rem' }}
@@ -25,7 +25,7 @@ export default function DrowningCalculator({ farm }: IProps) {
       </p>
       {!seconds && (
         <p>
-          <i>Enter how long it took you to drown above.</i>
+          <i>Enter how long it took you to drown in the field above.</i>
         </p>
       )}
       {!!seconds && (

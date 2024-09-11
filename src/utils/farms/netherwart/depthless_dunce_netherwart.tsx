@@ -2,16 +2,28 @@ import { Alert } from 'react-bootstrap'
 import { Keys, Tags } from '../../types.ts'
 import PlaceholderImage from '../../../components/common/placeholder-image/PlaceholderImage.tsx'
 
-const depthless_dunce_potato = {
-  id: 'depthless-dunce-potato',
+const depthless_dunce_netherwart = {
+  id: 'depthless-dunce-netherwart',
   name: 'The Depthless Dunce',
-  banner: '/hypixel-farming/assets/farms/potato/depthless-dunce/depthless_dunce_potato.png',
+  banner: '/hypixel-farming/assets/farms/nether_wart/depthless-dunce/depthless_dunce_netherwart.png',
   pictures: {
-    [Tags.drowning]: '/hypixel-farming/assets/farms/common/depthless-dunce/depthless_dunce_drowning.png',
+    [Tags.drowning]:
+      '/hypixel-farming/assets/farms/nether_wart/depthless-dunce/depthless_dunce_netherwart_drowning.png',
     [Tags.water_latch]: '/hypixel-farming/assets/farms/common/depthless-dunce/depthless_dunce_water_latch.png'
   },
   info: (
     <>
+      <Alert variant='warning'>
+        <Alert.Heading>This farm is ping dependent</Alert.Heading>
+        <p>
+          To use this farm, you should make sure, that <b>you have ping &gt;50ms</b>.
+        </p>
+        <p>
+          A good measure would be placing two Nether Warts next to each other and trying to hit one through the other
+          with a hoe that has the Replenish enchant applied. If you can reliably farm the second Nether Wart, this farm
+          will work for you.
+        </p>
+      </Alert>
       <div>
         <h2>Info</h2>
         <p>Simple to build, yet very efficient farm. Not having to use boot swap is a cherry on top!</p>
@@ -30,7 +42,6 @@ const depthless_dunce_potato = {
           .
         </p>
       </div>
-      <Alert variant='info'>Do not place water source blocks next to the farmland in the drowning section.</Alert>
     </>
   ),
   spawn: (
@@ -42,17 +53,17 @@ const depthless_dunce_potato = {
     </>
   ),
   tags: [Tags.bps, Tags.key_count, Tags.no_key_swap, Tags.drowning, Tags.water_latch, Tags.patcher, Tags.max_speed],
-  bps: 19.74,
+  bps: Infinity,
   keyCount: 2,
   yaw: '-166.6',
-  pitch: '-1.0',
+  pitch: '10.6',
   speed: 400,
   enchantments: ['Frost Walker II'],
   keys: [Keys.W, Keys.LC],
   depth: 5,
   buildDifficulty: 1,
-  schema: '/hypixel-farming/assets/schemas/Depthless_Dunce_Potato.litematic',
+  schema: '/hypixel-farming/assets/schemas/Depthless_Dunce_Nether_Wart.litematic',
   authors: ['Daladirn']
 }
 
-export default depthless_dunce_potato
+export default depthless_dunce_netherwart
