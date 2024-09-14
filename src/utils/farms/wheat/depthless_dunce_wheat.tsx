@@ -64,7 +64,7 @@ const depthless_dunce_wheat = {
   yaw: '-166.6',
   pitch: '-1.0',
   speed: 400,
-  enchantments: ['Frost Walker II', 'Depth Strider III'],
+  enchantments: ['Frost Walker II'],
   keys: [Keys.W, Keys.LC],
   depth: 5,
   buildDifficulty: 1,
