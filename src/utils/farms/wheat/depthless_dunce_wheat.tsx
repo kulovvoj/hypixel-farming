@@ -1,10 +1,11 @@
 import { Alert } from 'react-bootstrap'
-import { Keys, Tags } from '../../types.ts'
+import { Keys, Tags, TFarm } from '../../types.ts'
 import { Link } from 'react-router-dom'
 import { FARM_PATH } from '../../paths.ts'
 import PlaceholderImage from '../../../components/common/placeholder-image/PlaceholderImage.tsx'
+import { CardinalDirection } from '../../cardinalDirection.ts'
 
-const depthless_dunce_wheat = {
+const depthless_dunce_wheat: TFarm = {
   id: 'depthless-dunce-wheat',
   name: 'The Depthless Dunce',
   banner: '/hypixel-farming/assets/farms/wheat/depthless-dunce/depthless_dunce_wheat.png',
@@ -61,8 +62,28 @@ const depthless_dunce_wheat = {
   tags: [Tags.bps, Tags.key_count, Tags.no_key_swap, Tags.drowning, Tags.water_latch, Tags.patcher, Tags.max_speed],
   bps: 19.82,
   keyCount: 2,
-  yaw: '-166.6',
-  pitch: '-1.0',
+  yaw: -166.6,
+  pitch: -1.0,
+  farmDirection: CardinalDirection.WEST,
+  playerDirection: CardinalDirection.NORTH,
+  allowedDirections: [
+    {
+      farmDirection: CardinalDirection.WEST,
+      playerDirections: [CardinalDirection.SOUTH, CardinalDirection.NORTH]
+    },
+    {
+      farmDirection: CardinalDirection.EAST,
+      playerDirections: [CardinalDirection.SOUTH, CardinalDirection.NORTH]
+    },
+    {
+      farmDirection: CardinalDirection.NORTH,
+      playerDirections: [CardinalDirection.WEST, CardinalDirection.EAST]
+    },
+    {
+      farmDirection: CardinalDirection.SOUTH,
+      playerDirections: [CardinalDirection.WEST, CardinalDirection.EAST]
+    }
+  ],
   speed: 400,
   enchantments: ['Frost Walker II'],
   keys: [Keys.W, Keys.LC],

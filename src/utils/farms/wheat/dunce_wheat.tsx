@@ -1,8 +1,9 @@
-import { Keys, Tags } from '../../types.ts'
+import { Keys, Tags, TFarm } from '../../types.ts'
 import { Alert } from 'react-bootstrap'
 import PlaceholderImage from '../../../components/common/placeholder-image/PlaceholderImage.tsx'
+import { CardinalDirection } from '../../cardinalDirection.ts'
 
-const dunce_wheat = {
+const dunce_wheat: TFarm = {
   id: 'dunce-wheat',
   name: 'The Dunce',
   banner: '/hypixel-farming/assets/farms/wheat/dunce/dunce_wheat.png',
@@ -62,8 +63,28 @@ const dunce_wheat = {
   ],
   bps: 19.84,
   keyCount: 2,
-  yaw: '-13.4',
-  pitch: '6.2',
+  yaw: -13.4,
+  pitch: 6.2,
+  farmDirection: CardinalDirection.WEST,
+  playerDirection: CardinalDirection.SOUTH,
+  allowedDirections: [
+    {
+      farmDirection: CardinalDirection.WEST,
+      playerDirections: [CardinalDirection.SOUTH, CardinalDirection.NORTH]
+    },
+    {
+      farmDirection: CardinalDirection.EAST,
+      playerDirections: [CardinalDirection.SOUTH, CardinalDirection.NORTH]
+    },
+    {
+      farmDirection: CardinalDirection.NORTH,
+      playerDirections: [CardinalDirection.WEST, CardinalDirection.EAST]
+    },
+    {
+      farmDirection: CardinalDirection.SOUTH,
+      playerDirections: [CardinalDirection.WEST, CardinalDirection.EAST]
+    }
+  ],
   speed: 400,
   enchantments: ['Frost Walker II', 'Depth Strider III'],
   keys: [Keys.W, Keys.LC],

@@ -1,7 +1,8 @@
-import { Keys, Tags } from '../../types.ts'
+import { Keys, Tags, TFarm } from '../../types.ts'
 import PlaceholderImage from '../../../components/common/placeholder-image/PlaceholderImage.tsx'
+import { CardinalDirection } from '../../cardinalDirection.ts'
 
-const chimney_mushroom = {
+const chimney_mushroom: TFarm = {
   id: 'chimney-mushroom',
   name: 'The Chimney',
   banner: '/hypixel-farming/assets/farms/mushroom/chimney/chimney_mushroom.png',
@@ -48,8 +49,20 @@ const chimney_mushroom = {
   tags: [Tags.bps, Tags.key_count, Tags.boot_swap, Tags.no_key_swap, Tags.drowning, Tags.lava_latch, Tags.max_speed],
   bps: 18.77,
   keyCount: 3,
-  yaw: '28.5',
-  pitch: '0.0',
+  yaw: 28.5,
+  pitch: 0.0,
+  farmDirection: CardinalDirection.WEST,
+  playerDirection: CardinalDirection.SOUTH,
+  allowedDirections: [
+    {
+      farmDirection: CardinalDirection.WEST,
+      playerDirections: [CardinalDirection.SOUTH, CardinalDirection.NORTH]
+    },
+    {
+      farmDirection: CardinalDirection.EAST,
+      playerDirections: [CardinalDirection.SOUTH, CardinalDirection.NORTH]
+    }
+  ],
   speed: 400,
   enchantments: ['Frost Walker II', 'Depth Strider III'],
   keys: [Keys.W, Keys.A, Keys.LC],

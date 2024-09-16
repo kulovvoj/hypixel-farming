@@ -1,4 +1,5 @@
 import { FunctionComponent, ReactNode, SVGAttributes } from 'react'
+import { CardinalDirection } from './cardinalDirection.ts'
 
 export type TCrops = {
   [key: string]: TCrop
@@ -23,8 +24,11 @@ export type TFarm = {
   keyCount?: number
   depth: number
   tags: Tags[]
-  yaw: string
-  pitch: string
+  yaw: number
+  pitch: number
+  farmDirection: CardinalDirection
+  playerDirection: CardinalDirection
+  allowedDirections: { farmDirection: CardinalDirection; playerDirections: CardinalDirection[] }[]
   speed: number
   enchantments: string[]
   keys: Keys[]

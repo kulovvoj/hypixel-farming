@@ -1,8 +1,9 @@
 import { Alert } from 'react-bootstrap'
-import { Keys, Tags } from '../../types.ts'
+import { Keys, Tags, TFarm } from '../../types.ts'
 import PlaceholderImage from '../../../components/common/placeholder-image/PlaceholderImage.tsx'
+import { CardinalDirection } from '../../cardinalDirection.ts'
 
-const depthless_dunce_mushroom = {
+const depthless_dunce_mushroom: TFarm = {
   id: 'depthless-dunce-mushroom',
   name: 'The Depthless Dunce',
   banner: '/hypixel-farming/assets/farms/mushroom/depthless-dunce/depthless_dunce_mushroom.png',
@@ -45,8 +46,28 @@ const depthless_dunce_mushroom = {
   tags: [Tags.bps, Tags.key_count, Tags.no_key_swap, Tags.drowning, Tags.water_latch, Tags.max_speed],
   bps: 19.7,
   keyCount: 3,
-  yaw: '151.49',
-  pitch: '0.0',
+  yaw: 151.49,
+  pitch: 0.0,
+  farmDirection: CardinalDirection.WEST,
+  playerDirection: CardinalDirection.NORTH,
+  allowedDirections: [
+    {
+      farmDirection: CardinalDirection.WEST,
+      playerDirections: [CardinalDirection.SOUTH, CardinalDirection.NORTH]
+    },
+    {
+      farmDirection: CardinalDirection.EAST,
+      playerDirections: [CardinalDirection.SOUTH, CardinalDirection.NORTH]
+    },
+    {
+      farmDirection: CardinalDirection.NORTH,
+      playerDirections: [CardinalDirection.WEST, CardinalDirection.EAST]
+    },
+    {
+      farmDirection: CardinalDirection.SOUTH,
+      playerDirections: [CardinalDirection.WEST, CardinalDirection.EAST]
+    }
+  ],
   speed: 400,
   enchantments: ['Frost Walker II'],
   keys: [Keys.W, Keys.D, Keys.LC],

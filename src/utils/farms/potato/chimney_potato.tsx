@@ -1,7 +1,8 @@
-import { Keys, Tags } from '../../types.ts'
+import { Keys, Tags, TFarm } from '../../types.ts'
 import PlaceholderImage from '../../../components/common/placeholder-image/PlaceholderImage.tsx'
+import { CardinalDirection } from '../../cardinalDirection.ts'
 
-const chimney_potato = {
+const chimney_potato: TFarm = {
   id: 'chimney-potato',
   name: 'The Chimney',
   banner: '/hypixel-farming/assets/farms/potato/chimney/chimney_potato.png',
@@ -54,8 +55,20 @@ const chimney_potato = {
   tags: [Tags.bps, Tags.key_count, Tags.boot_swap, Tags.no_key_swap, Tags.drowning, Tags.lava_latch, Tags.patcher],
   bps: 19.8,
   keyCount: 3,
-  yaw: '0.0',
-  pitch: '6.5',
+  yaw: 0.0,
+  pitch: 6.5,
+  farmDirection: CardinalDirection.WEST,
+  playerDirection: CardinalDirection.SOUTH,
+  allowedDirections: [
+    {
+      farmDirection: CardinalDirection.WEST,
+      playerDirections: [CardinalDirection.SOUTH, CardinalDirection.NORTH]
+    },
+    {
+      farmDirection: CardinalDirection.EAST,
+      playerDirections: [CardinalDirection.SOUTH, CardinalDirection.NORTH]
+    }
+  ],
   speed: 202,
   enchantments: ['Frost Walker II', 'Depth Strider I'],
   keys: [Keys.W, Keys.A, Keys.LC],

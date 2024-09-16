@@ -2,12 +2,13 @@ import { Navigate, useParams } from 'react-router-dom'
 import { CROP_PATH } from '../../utils/paths.ts'
 import { CROPS } from '../../utils/crops.ts'
 import TagSection from '../../components/farms/common/tag-sections/TagSection.tsx'
-import { Card, CardBody, ProgressBar } from 'react-bootstrap'
+import { Card, CardBody, Dropdown, ProgressBar } from 'react-bootstrap'
 import Icon, { ICON_SIZE, ICONS } from '../../components/common/icon/Icon.tsx'
 import { Tags } from '../../utils/types.ts'
 import KeyLayout from '../../components/farm-guide/key-layout/KeyLayout.tsx'
 import PlaceholderImage from '../../components/common/placeholder-image/PlaceholderImage.tsx'
-import { FunctionComponent, SVGAttributes } from 'react'
+import { FunctionComponent, SVGAttributes, useState } from 'react'
+import { calculateYaw, CardinalDirection } from '../../utils/cardinalDirection.ts'
 
 const iconMap: { [key: string]: FunctionComponent<SVGAttributes<SVGElement>> } = {
   wheat: ICONS.Wheat,
@@ -22,12 +23,42 @@ const iconMap: { [key: string]: FunctionComponent<SVGAttributes<SVGElement>> } =
   cocoa: ICONS.CocoaBeans
 }
 
+const farmDirections = {
+  [CardinalDirection.WEST]: 'East to West',
+  [CardinalDirection.EAST]: 'West to East',
+  [CardinalDirection.NORTH]: 'South to North',
+  [CardinalDirection.SOUTH]: 'North to South'
+}
+
+const playerDirections = {
+  [CardinalDirection.WEST]: 'Facing West',
+  [CardinalDirection.EAST]: 'Facing East',
+  [CardinalDirection.NORTH]: 'Facing North',
+  [CardinalDirection.SOUTH]: 'Facing South'
+}
+
 export default function FarmGuide() {
   const { type, id } = useParams<{ type: string; id: string }>() as { type: string; id: string }
   const farm = CROPS[type].farms.find((farm) => farm.id === id)
+  const [farmDirection, setFarmDirection] = useState<CardinalDirection>(farm?.farmDirection ?? CardinalDirection.WEST)
+  const [playerDirection, setPlayerDirection] = useState<CardinalDirection>(
+    farm?.playerDirection ?? CardinalDirection.SOUTH
+  )
+
   if (!farm) {
     return <Navigate to={CROP_PATH.replace(':type', type)} />
   }
+  const yaw = calculateYaw({
+    defaultDirection: {
+      farmDirection: farm.farmDirection,
+      playerDirection: farm.playerDirection
+    },
+    customDirection: {
+      farmDirection: farmDirection,
+      playerDirection: playerDirection
+    },
+    defaultYaw: farm.yaw
+  })
 
   return (
     <div className='farm'>
@@ -58,9 +89,21 @@ export default function FarmGuide() {
           </CardBody>
         </Card>
         <Card>
+          <CardBody className='py-2'>
+            <h3 className='text-center'>Keys</h3>
+            <KeyLayout farm={farm} />
+          </CardBody>
+        </Card>
+        <Card>
           <CardBody
             className='py-2'
-            style={{ display: 'grid', gridTemplateRows: 'auto 1fr', columnGap: '0.75rem', justifyItems: 'center' }}
+            style={{
+              display: 'grid',
+              gridTemplateRows: 'auto 1fr',
+              columnGap: '0.75rem',
+              justifyItems: 'center',
+              alignItems: 'center'
+            }}
           >
             <h3 className='text-center'>Schema</h3>
             <div>
@@ -88,12 +131,69 @@ export default function FarmGuide() {
           >
             <h3 className='text-center'>Setup</h3>
             <div
-              style={{ display: 'grid', gridTemplateColumns: 'auto 1fr', columnGap: '0.75rem', height: 'fit-content' }}
+              style={{
+                display: 'grid',
+                gridTemplateColumns: 'auto 4rem',
+                columnGap: '0.75rem',
+                height: 'fit-content'
+              }}
             >
               <div>Yaw:</div>
-              <strong className='text-right'>{farm.yaw}</strong>
-              <div>Pitch:</div> <strong className='text-right'>{farm.pitch}</strong>
-              <div>Speed:</div> <strong className='text-right'>{farm.speed}</strong>
+              <strong className='text-right'>{yaw.toFixed(2)}</strong>
+              <div>Pitch:</div>
+              <strong className='text-right'>{farm.pitch.toFixed(2)}</strong>
+              <div>Speed:</div>
+              <strong className='text-right'>{farm.speed}</strong>
+            </div>
+            <div
+              style={{
+                display: 'grid',
+                gridTemplateColumns: '1fr 1fr',
+                columnGap: '0.75rem',
+                justifyItems: 'center',
+                width: '100%'
+              }}
+            >
+              <div className='d-flex justify-content-end w-100'>
+                <Dropdown className='w-100'>
+                  <Dropdown.Toggle variant='dark' id='dropdown-basic' className='w-100'>
+                    {farmDirections[farmDirection]}
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu>
+                    {farm.allowedDirections?.map((allowedDirection) => (
+                      <Dropdown.Item
+                        key={allowedDirection.farmDirection}
+                        onClick={() => {
+                          setFarmDirection(allowedDirection.farmDirection)
+                          setPlayerDirection(
+                            allowedDirection.farmDirection === farm.farmDirection
+                              ? farm.playerDirection
+                              : allowedDirection.playerDirections[0]
+                          )
+                        }}
+                      >
+                        {farmDirections[allowedDirection.farmDirection]}
+                      </Dropdown.Item>
+                    ))}
+                  </Dropdown.Menu>
+                </Dropdown>
+              </div>
+              <div className='d-flex justify-content-start w-100'>
+                <Dropdown className='w-100'>
+                  <Dropdown.Toggle variant='dark' id='dropdown-basic' className='w-100'>
+                    {playerDirections[playerDirection]}
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu>
+                    {farm.allowedDirections
+                      .find((allowedDirection) => allowedDirection.farmDirection === farmDirection)
+                      ?.playerDirections.map((allowedDirection) => (
+                        <Dropdown.Item key={allowedDirection} onClick={() => setPlayerDirection(allowedDirection)}>
+                          {playerDirections[allowedDirection]}
+                        </Dropdown.Item>
+                      ))}
+                  </Dropdown.Menu>
+                </Dropdown>
+              </div>
             </div>
           </CardBody>
         </Card>
@@ -107,12 +207,6 @@ export default function FarmGuide() {
                 </div>
               ))}
             </div>
-          </CardBody>
-        </Card>
-        <Card>
-          <CardBody className='py-2'>
-            <h3 className='text-center'>Keys</h3>
-            <KeyLayout farm={farm} />
           </CardBody>
         </Card>
       </div>

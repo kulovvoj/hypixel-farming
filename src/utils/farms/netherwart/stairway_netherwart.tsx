@@ -1,7 +1,8 @@
-import { Keys, Tags } from '../../types.ts'
+import { Keys, Tags, TFarm } from '../../types.ts'
 import PlaceholderImage from '../../../components/common/placeholder-image/PlaceholderImage.tsx'
+import { CardinalDirection } from '../../cardinalDirection.ts'
 
-const stairway_netherwart = {
+const stairway_netherwart: TFarm = {
   id: 'stairway-netherwart',
   name: 'The Stairway',
   banner: '/hypixel-farming/assets/farms/nether_wart/stairway/stairway_wart.png',
@@ -48,8 +49,28 @@ const stairway_netherwart = {
   tags: [Tags.bps, Tags.key_count, Tags.no_key_swap, Tags.drowning, Tags.water_latch, Tags.patcher],
   bps: 19.73,
   keyCount: 3,
-  yaw: '0.0',
-  pitch: '10.0',
+  yaw: 0.0,
+  pitch: 10.0,
+  farmDirection: CardinalDirection.WEST,
+  playerDirection: CardinalDirection.SOUTH,
+  allowedDirections: [
+    {
+      farmDirection: CardinalDirection.WEST,
+      playerDirections: [CardinalDirection.SOUTH, CardinalDirection.NORTH]
+    },
+    {
+      farmDirection: CardinalDirection.EAST,
+      playerDirections: [CardinalDirection.SOUTH, CardinalDirection.NORTH]
+    },
+    {
+      farmDirection: CardinalDirection.NORTH,
+      playerDirections: [CardinalDirection.WEST, CardinalDirection.EAST]
+    },
+    {
+      farmDirection: CardinalDirection.SOUTH,
+      playerDirections: [CardinalDirection.WEST, CardinalDirection.EAST]
+    }
+  ],
   speed: 183,
   enchantments: ['Frost Walker II'],
   keys: [Keys.W, Keys.A, Keys.LC],

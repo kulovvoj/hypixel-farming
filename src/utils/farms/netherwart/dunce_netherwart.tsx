@@ -1,8 +1,9 @@
 import { Alert } from 'react-bootstrap'
-import { Keys, Tags } from '../../types.ts'
+import { Keys, Tags, TFarm } from '../../types.ts'
 import PlaceholderImage from '../../../components/common/placeholder-image/PlaceholderImage.tsx'
+import { CardinalDirection } from '../../cardinalDirection.ts'
 
-const dunce_netherwart = {
+const dunce_netherwart: TFarm = {
   id: 'dunce-netherwart',
   name: 'The Dunce',
   banner: '/hypixel-farming/assets/farms/nether_wart/dunce/dunce_netherwart.png',
@@ -62,8 +63,28 @@ const dunce_netherwart = {
   ],
   bps: 19.83,
   keyCount: 2,
-  yaw: '-13.4',
-  pitch: '0.0',
+  yaw: -13.4,
+  farmDirection: CardinalDirection.WEST,
+  playerDirection: CardinalDirection.SOUTH,
+  allowedDirections: [
+    {
+      farmDirection: CardinalDirection.WEST,
+      playerDirections: [CardinalDirection.SOUTH, CardinalDirection.NORTH]
+    },
+    {
+      farmDirection: CardinalDirection.EAST,
+      playerDirections: [CardinalDirection.SOUTH, CardinalDirection.NORTH]
+    },
+    {
+      farmDirection: CardinalDirection.NORTH,
+      playerDirections: [CardinalDirection.WEST, CardinalDirection.EAST]
+    },
+    {
+      farmDirection: CardinalDirection.SOUTH,
+      playerDirections: [CardinalDirection.WEST, CardinalDirection.EAST]
+    }
+  ],
+  pitch: 0,
   speed: 400,
   enchantments: ['Frost Walker II', 'Depth Strider III'],
   keys: [Keys.W, Keys.LC],

@@ -15,7 +15,6 @@ export default function PlaceholderImage({ src }: IProps) {
       />
       <img
         alt=''
-        fetchPriority='high'
         src={src.replace('.png', '_placeholder.png')}
         className={`img-placeholder${isImageLoaded ? ' loaded' : ''}`}
       />
