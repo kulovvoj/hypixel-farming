@@ -95,32 +95,14 @@ export default function FarmGuide() {
           </CardBody>
         </Card>
         <Card>
-          <CardBody
-            className='py-2'
-            style={{
-              display: 'grid',
-              gridTemplateRows: 'auto 1fr',
-              columnGap: '0.75rem',
-              justifyItems: 'center',
-              alignItems: 'center'
-            }}
-          >
-            <h3 className='text-center'>Schema</h3>
-            <div>
-              <a href={farm.schema} download className='d-flex align-items-end gap-2'>
-                <Icon icon={ICONS.Download} size={ICON_SIZE.SIZE_32} /> Download
-              </a>
-            </div>
-            <div className='d-flex flex-row mt-2 align-items-center gap-3 w-100'>
-              <strong>
-                <small>Build difficulty:</small>
-              </strong>
-              <ProgressBar
-                variant={farm.buildDifficulty > 4 ? 'danger' : farm.buildDifficulty > 2 ? 'warning' : 'success'}
-                now={farm.buildDifficulty * 20}
-                className='flex-grow-1'
-                style={{ '--bs-progress-height': '0.5rem' }}
-              />
+          <CardBody className='py-2'>
+            <h3 className='text-center'>Enchantments</h3>
+            <div className='d-flex align-items-center flex-column'>
+              {farm.enchantments.map((enchantment) => (
+                <div key={enchantment}>
+                  <strong>{enchantment}</strong>
+                </div>
+              ))}
             </div>
           </CardBody>
         </Card>
@@ -186,9 +168,12 @@ export default function FarmGuide() {
                   <Dropdown.Menu>
                     {farm.allowedDirections
                       .find((allowedDirection) => allowedDirection.farmDirection === farmDirection)
-                      ?.playerDirections.map((allowedDirection) => (
-                        <Dropdown.Item key={allowedDirection} onClick={() => setPlayerDirection(allowedDirection)}>
-                          {playerDirections[allowedDirection]}
+                      ?.playerDirections.map((allowedPlayerDirection) => (
+                        <Dropdown.Item
+                          key={allowedPlayerDirection}
+                          onClick={() => setPlayerDirection(allowedPlayerDirection)}
+                        >
+                          {playerDirections[allowedPlayerDirection]}
                         </Dropdown.Item>
                       ))}
                   </Dropdown.Menu>
@@ -198,14 +183,32 @@ export default function FarmGuide() {
           </CardBody>
         </Card>
         <Card>
-          <CardBody className='py-2'>
-            <h3 className='text-center'>Enchantments</h3>
-            <div className='d-flex align-items-center flex-column'>
-              {farm.enchantments.map((enchantment) => (
-                <div key={enchantment}>
-                  <strong>{enchantment}</strong>
-                </div>
-              ))}
+          <CardBody
+            className='py-2'
+            style={{
+              display: 'grid',
+              gridTemplateRows: 'auto 1fr',
+              columnGap: '0.75rem',
+              justifyItems: 'center',
+              alignItems: 'center'
+            }}
+          >
+            <h3 className='text-center'>Schema</h3>
+            <div>
+              <a href={farm.schema} download className='d-flex align-items-end gap-2'>
+                <Icon icon={ICONS.Download} size={ICON_SIZE.SIZE_32} /> Download
+              </a>
+            </div>
+            <div className='d-flex flex-row mt-2 align-items-center gap-3 w-100'>
+              <strong>
+                <small>Build difficulty:</small>
+              </strong>
+              <ProgressBar
+                variant={farm.buildDifficulty > 4 ? 'danger' : farm.buildDifficulty > 2 ? 'warning' : 'success'}
+                now={farm.buildDifficulty * 20}
+                className='flex-grow-1'
+                style={{ '--bs-progress-height': '0.5rem' }}
+              />
             </div>
           </CardBody>
         </Card>
