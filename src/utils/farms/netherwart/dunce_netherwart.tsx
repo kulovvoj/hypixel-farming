@@ -74,15 +74,15 @@ const dunce_netherwart: TFarm = {
     {
       farmDirection: CardinalDirection.EAST,
       playerDirections: [CardinalDirection.SOUTH, CardinalDirection.NORTH]
-    },
-    {
-      farmDirection: CardinalDirection.NORTH,
-      playerDirections: [CardinalDirection.WEST, CardinalDirection.EAST]
-    },
-    {
-      farmDirection: CardinalDirection.SOUTH,
-      playerDirections: [CardinalDirection.WEST, CardinalDirection.EAST]
     }
+    // {
+    //   farmDirection: CardinalDirection.NORTH,
+    //   playerDirections: [CardinalDirection.WEST, CardinalDirection.EAST]
+    // },
+    // {
+    //   farmDirection: CardinalDirection.SOUTH,
+    //   playerDirections: [CardinalDirection.WEST, CardinalDirection.EAST]
+    // }
   ],
   pitch: 0,
   speed: 400,

@@ -75,15 +75,15 @@ const dunce_wheat: TFarm = {
     {
       farmDirection: CardinalDirection.EAST,
       playerDirections: [CardinalDirection.SOUTH, CardinalDirection.NORTH]
-    },
-    {
-      farmDirection: CardinalDirection.NORTH,
-      playerDirections: [CardinalDirection.WEST, CardinalDirection.EAST]
-    },
-    {
-      farmDirection: CardinalDirection.SOUTH,
-      playerDirections: [CardinalDirection.WEST, CardinalDirection.EAST]
     }
+    // {
+    //   farmDirection: CardinalDirection.NORTH,
+    //   playerDirections: [CardinalDirection.WEST, CardinalDirection.EAST]
+    // },
+    // {
+    //   farmDirection: CardinalDirection.SOUTH,
+    //   playerDirections: [CardinalDirection.WEST, CardinalDirection.EAST]
+    // }
   ],
   speed: 400,
   enchantments: ['Frost Walker II', 'Depth Strider III'],
