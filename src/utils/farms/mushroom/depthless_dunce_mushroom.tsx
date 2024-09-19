@@ -48,11 +48,11 @@ const depthless_dunce_mushroom: TFarm = {
   keyCount: 3,
   yaw: 151.49,
   pitch: 0.0,
-  farmDirection: CardinalDirection.WEST,
+  farmDirection: CardinalDirection.EAST,
   playerDirection: CardinalDirection.NORTH,
   allowedDirections: [
     {
-      farmDirection: CardinalDirection.WEST,
+      farmDirection: CardinalDirection.EAST,
       playerDirections: [CardinalDirection.SOUTH, CardinalDirection.NORTH]
     },
     {

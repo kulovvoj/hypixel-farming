@@ -64,11 +64,11 @@ const dunce_netherwart: TFarm = {
   bps: 19.83,
   keyCount: 2,
   yaw: -13.4,
-  farmDirection: CardinalDirection.WEST,
+  farmDirection: CardinalDirection.EAST,
   playerDirection: CardinalDirection.SOUTH,
   allowedDirections: [
     {
-      farmDirection: CardinalDirection.WEST,
+      farmDirection: CardinalDirection.EAST,
       playerDirections: [CardinalDirection.SOUTH, CardinalDirection.NORTH]
     },
     {

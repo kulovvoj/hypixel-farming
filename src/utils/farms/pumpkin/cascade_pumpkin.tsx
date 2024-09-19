@@ -46,11 +46,11 @@ const cascade_pumpkin: TFarm = {
   keyCount: 2,
   yaw: -22.7,
   pitch: -55.9,
-  farmDirection: CardinalDirection.WEST,
+  farmDirection: CardinalDirection.EAST,
   playerDirection: CardinalDirection.SOUTH,
   allowedDirections: [
     {
-      farmDirection: CardinalDirection.WEST,
+      farmDirection: CardinalDirection.EAST,
       playerDirections: [CardinalDirection.SOUTH, CardinalDirection.NORTH]
     },
     {

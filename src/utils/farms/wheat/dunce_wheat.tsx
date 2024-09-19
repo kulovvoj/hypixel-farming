@@ -65,11 +65,11 @@ const dunce_wheat: TFarm = {
   keyCount: 2,
   yaw: -13.4,
   pitch: 6.2,
-  farmDirection: CardinalDirection.WEST,
+  farmDirection: CardinalDirection.EAST,
   playerDirection: CardinalDirection.SOUTH,
   allowedDirections: [
     {
-      farmDirection: CardinalDirection.WEST,
+      farmDirection: CardinalDirection.EAST,
       playerDirections: [CardinalDirection.SOUTH, CardinalDirection.NORTH]
     },
     {
