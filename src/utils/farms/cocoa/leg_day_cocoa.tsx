@@ -41,7 +41,7 @@ const leg_day_cocoa: TFarm = {
   tags: [Tags.bps, Tags.key_count, Tags.boot_swap, Tags.no_key_swap, Tags.drowning, Tags.water_latch, Tags.max_speed],
   bps: 19.75,
   keyCount: 2,
-  yaw: -76.61,
+  yaw: 76.61,
   pitch: -81.0,
   farmDirection: CardinalDirection.EAST,
   playerDirection: CardinalDirection.SOUTH,
