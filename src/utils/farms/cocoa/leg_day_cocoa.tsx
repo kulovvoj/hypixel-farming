@@ -15,6 +15,10 @@ const leg_day_cocoa: TFarm = {
     <>
       <Alert variant='info'>This farm requires you to set your angle precisely.</Alert>
       <div>
+        <h2>Info</h2>
+        <p>Why is the farm called The Leg Day? You skip every other row.</p>
+      </div>
+      <div>
         <h2>Building tips</h2>
         <p>
           Strings are hard to see. You can download a simple resource pack, which makes strings red,{' '}
