@@ -55,7 +55,7 @@ const depthless_dunce_carrot: TFarm = {
       playerDirections: [CardinalDirection.SOUTH, CardinalDirection.NORTH]
     },
     {
-      farmDirection: CardinalDirection.EAST,
+      farmDirection: CardinalDirection.WEST,
       playerDirections: [CardinalDirection.SOUTH, CardinalDirection.NORTH]
     },
     {

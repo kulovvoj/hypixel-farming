@@ -3,34 +3,17 @@ import { Keys, Tags, TFarm } from '../../types.ts'
 import PlaceholderImage from '../../../components/common/placeholder-image/PlaceholderImage.tsx'
 import { CardinalDirection } from '../../cardinalDirection.ts'
 
-const dunce_netherwart: TFarm = {
-  id: 'dunce-netherwart',
-  name: 'The Dunce',
-  banner: '/hypixel-farming/assets/farms/nether_wart/dunce/dunce_netherwart.png',
+const leg_day_cocoa: TFarm = {
+  id: 'leg-day-cocoa',
+  name: 'The Leg Day',
+  banner: '/hypixel-farming/assets/farms/cocoa/leg-day/the_leg_day_cocoa.png',
   pictures: {
-    [Tags.drowning]: '/hypixel-farming/assets/farms/common/dunce/dunce_drowning.png',
-    [Tags.water_latch]: '/hypixel-farming/assets/farms/common/dunce/dunce_water_latch.png'
+    [Tags.drowning]: '/hypixel-farming/assets/farms/cocoa/leg-day/the_leg_day_drowning.png',
+    [Tags.water_latch]: '/hypixel-farming/assets/farms/cocoa/leg-day/the_leg_day_water_latch.png'
   },
   info: (
     <>
-      <div>
-        <h2>Info</h2>
-        <p>
-          Simple to build, yet very efficient farm. Only downside is that there's a little setup before you start
-          farming because of boot swap.
-        </p>
-      </div>
-      <div>
-        <h2>Floating Crystal</h2>
-        <p>
-          Place a{' '}
-          <a href='https://wiki.hypixel.net/Floating_Crystal#Nether_Wart_' target='_blank'>
-            Nether Wart Crystal
-          </a>{' '}
-          on top of the red hardened clay block. It will replenish the latch area with fully grown Nether Wart before
-          you respawn for increased rates.
-        </p>
-      </div>
+      <Alert variant='info'>This farm requires you to set your angle precisely.</Alert>
       <div>
         <h2>Building tips</h2>
         <p>
@@ -48,22 +31,14 @@ const dunce_netherwart: TFarm = {
       <Alert variant='info' className='mt-2'>
         Highlighted blocks are temporary and should be removed after setting spawn.
       </Alert>
-      <PlaceholderImage src='/hypixel-farming/assets/farms/common/dunce/dunce_spawn.png' />
+      <PlaceholderImage src='/hypixel-farming/assets/farms/cocoa/leg-day/the_leg_day_spawn.png' />
     </>
   ),
-  tags: [
-    Tags.bps,
-    Tags.key_count,
-    Tags.boot_swap,
-    Tags.no_key_swap,
-    Tags.drowning,
-    Tags.water_latch,
-    Tags.patcher,
-    Tags.max_speed
-  ],
-  bps: 19.83,
+  tags: [Tags.bps, Tags.key_count, Tags.boot_swap, Tags.no_key_swap, Tags.drowning, Tags.water_latch, Tags.max_speed],
+  bps: 19.75,
   keyCount: 2,
-  yaw: -13.4,
+  yaw: -76.61,
+  pitch: -81.0,
   farmDirection: CardinalDirection.EAST,
   playerDirection: CardinalDirection.SOUTH,
   allowedDirections: [
@@ -84,14 +59,13 @@ const dunce_netherwart: TFarm = {
       playerDirections: [CardinalDirection.WEST, CardinalDirection.EAST]
     }
   ],
-  pitch: 0,
   speed: 400,
   enchantments: ['Frost Walker II', 'Depth Strider III'],
-  keys: [Keys.W, Keys.LC],
+  keys: [Keys.A, Keys.LC],
   depth: 5,
   buildDifficulty: 1,
-  schema: '/hypixel-farming/assets/schemas/Dunce_Nether_Wart.litematic',
-  authors: ['Daladirn']
+  schema: '/hypixel-farming/assets/schemas/Leg_Day_Cocoa.litematic',
+  authors: ['TheCocoaLord', 'Daladirn']
 }
 
-export default dunce_netherwart
+export default leg_day_cocoa

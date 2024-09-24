@@ -61,7 +61,7 @@ const stairway_wheat: TFarm = {
       playerDirections: [CardinalDirection.SOUTH, CardinalDirection.NORTH]
     },
     {
-      farmDirection: CardinalDirection.EAST,
+      farmDirection: CardinalDirection.WEST,
       playerDirections: [CardinalDirection.SOUTH, CardinalDirection.NORTH]
     },
     {
